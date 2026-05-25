@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>border-style</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>border-style</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает стиль границы вокруг элемента.
+                Допустимо задавать индивидуальные стили
+                для разных сторон элемента.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    border-style: [none | hidden | dotted | dashed | solid |
+                    double | groove | ridge | inset | outset] {1,4} | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Для управления видом границы предоставляется
+                несколько значений свойства border-style.
+                Вид зависит от используемого браузера и заданной
+                толщины границы. В таблице приведены названия
+                стилей и получаемая рамка при разных значениях
+                толщины — 1, 3, 5 и 7 пикселов.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Таблица стилей границ</h2>
+
+            <table class="border-style-table">
+
+                <tr>
+                    <th>1 пиксел</th>
+                    <th>3 пиксела</th>
+                    <th>5 пикселов</th>
+                    <th>7 пикселов</th>
+                </tr>
+
+                <tr>
+                    <td><div class="demo dotted b1">dotted</div></td>
+                    <td><div class="demo dotted b3">dotted</div></td>
+                    <td><div class="demo dotted b5">dotted</div></td>
+                    <td><div class="demo dotted b7">dotted</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo dashed b1">dashed</div></td>
+                    <td><div class="demo dashed b3">dashed</div></td>
+                    <td><div class="demo dashed b5">dashed</div></td>
+                    <td><div class="demo dashed b7">dashed</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo solid b1">solid</div></td>
+                    <td><div class="demo solid b3">solid</div></td>
+                    <td><div class="demo solid b5">solid</div></td>
+                    <td><div class="demo solid b7">solid</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo double b3">double</div></td>
+                    <td><div class="demo double b5">double</div></td>
+                    <td><div class="demo double b7">double</div></td>
+                    <td><div class="demo double b7">double</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo groove b3">groove</div></td>
+                    <td><div class="demo groove b5">groove</div></td>
+                    <td><div class="demo groove b7">groove</div></td>
+                    <td><div class="demo groove b7">groove</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo ridge b3">ridge</div></td>
+                    <td><div class="demo ridge b5">ridge</div></td>
+                    <td><div class="demo ridge b7">ridge</div></td>
+                    <td><div class="demo ridge b7">ridge</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo inset b3">inset</div></td>
+                    <td><div class="demo inset b5">inset</div></td>
+                    <td><div class="demo inset b7">inset</div></td>
+                    <td><div class="demo inset b7">inset</div></td>
+                </tr>
+
+                <tr>
+                    <td><div class="demo outset b3">outset</div></td>
+                    <td><div class="demo outset b5">outset</div></td>
+                    <td><div class="demo outset b7">outset</div></td>
+                    <td><div class="demo outset b7">outset</div></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Кроме перечисленных в таблице значений
+                используются следующие ключевые слова.
+            </div>
+
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Число значений</th>
+                <th>Результат</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    Стиль границы будет задан для всех сторон элемента.
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>
+                    Первое значение устанавливает стиль верхней
+                    и нижней границы, второе — левой и правой.
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>
+                    Первое значение задает стиль верхней границы,
+                    второе — одновременно левой и правой границы,
+                    а третье — нижней границы.
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>
+                    Поочередно устанавливается стиль верхней,
+                    правой, нижней и левой границы.
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;border-style&lt;/title&gt;
+
+    &lt;style&gt;
+
+        p {
+            padding: 7px;
+            background: #FCE9C9;
+            border: 4px dashed #E27D60;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;p&gt;
+        Пример рамки со стилем dashed.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства border-style:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img17.png" alt="Результат border-style">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

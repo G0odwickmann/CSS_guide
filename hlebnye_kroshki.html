@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Хлебные крошки</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>Хлебные крошки</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/banner_hleb.jpg" alt="Хлебные крошки">
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Хлебные крошки — это разновидность навигации,
+                которая помогает посетителям понять, где они
+                находятся на сайте и быстро перемещаться
+                по иерархии веб-страниц.
+            </div>
+
+            <br>
+
+            <div>
+                Обычно хлебные крошки отображаются в виде
+                цепочки ссылок, разделённых между собой
+                специальными символами
+                (например: «>», «/» или «→»).
+            </div>
+
+            <br>
+
+            <div>
+                Первой в цепочке ссылок, как правило,
+                идёт главная страница, а последней —
+                текущая веб-страница.
+            </div>
+
+            <br>
+
+            <div>
+                Вместо надписи «Главная страница»
+                также применяют изображение домика.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img5.jpg" alt="Пример хлебных крошек">
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Обратите внимание, что последний пункт
+                не является ссылкой, поскольку указывает
+                на текущую веб-страницу.
+            </div>
+
+            <br>
+
+            <div>
+                Разметка хлебных крошек обычно делается
+                с помощью списков &lt;ul&gt; или &lt;ol&gt;,
+                каждая ссылка вставляется внутрь
+                пункта списка &lt;li&gt;.
+            </div>
+
+            <br>
+
+            <div>
+                Для последнего пункта списка ссылка не нужна,
+                поэтому вместо элемента &lt;a&gt;
+                используется &lt;span&gt;.
+            </div>
+
+            <br>
+
+            <div>
+                Поскольку хлебные крошки служат формой навигации,
+                их рекомендуется поместить внутрь элемента
+                &lt;nav&gt;, снабдив его атрибутом
+                aria-label с текстовой подсказкой.
+            </div>
+
+        </div>
+
+        <div class="code-example">
+
+<pre>
+&lt;nav aria-label="Хлебные крошки"&gt;
+
+    &lt;ol class="breadcrumb"&gt;
+
+        &lt;li&gt;
+            &lt;a href="/"&gt;Главная&lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a href="/catalog/"&gt;Каталог&lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li&gt;
+            &lt;a href="/catalog/electronics/"&gt;
+                Электроника
+            &lt;/a&gt;
+        &lt;/li&gt;
+
+        &lt;li aria-current="page"&gt;
+            &lt;span&gt;Хлебные крошки&lt;/span&gt;
+        &lt;/li&gt;
+
+    &lt;/ol&gt;
+
+&lt;/nav&gt;
+</pre>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Перед превращением списка в хлебные крошки
+                сперва следует сделать сброс стилей,
+                обнулив пространство вокруг списка
+                и убрав нумерацию.
+            </div>
+
+        </div>
+
+        <div class="code-example second-example">
+
+<pre>
+.breadcrumb {
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+</pre>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Затем превращаем список в горизонтальный,
+                добавив в класс breadcrumb свойство
+                display со значением flex или inline-flex.
+            </div>
+
+            <br>
+
+            <div>
+                Разница между значениями следующая:
+            </div>
+
+            <ul>
+                <li>
+                    flex — делает хлебные крошки
+                    на всю ширину области;
+                </li>
+
+                <li>
+                    inline-flex — ширина хлебных крошек
+                    соответствует их содержимому.
+                </li>
+            </ul>
+
+            <div>
+                Обратите внимание, что разница будет заметна
+                только при использовании фонового цвета
+                под хлебными крошками.
+            </div>
+
+            <br>
+
+            <div>
+                По умолчанию flex-элементы не переносятся
+                на другую строку, поэтому это поведение
+                следует исправить через свойство flex-wrap.
+            </div>
+
+            <br>
+
+            <div>
+                Разделители между ссылками также устанавливаются
+                через стили, что удобно, поскольку не требуется
+                каким-либо образом менять исходный код HTML.
+            </div>
+
+            <br>
+
+            <div>
+                Символ разделителя добавляется с помощью
+                свойства content и псевдоэлемента ::after.
+            </div>
+
+        </div>
+
+        <div class="code-example second-example">
+
+<pre>
+.breadcrumb &gt; li::after {
+
+    content: "→";
+
+    color: orange;
+}
+</pre>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Здесь мы используем стрелку и делаем её
+                оранжевой через свойство color.
+            </div>
+
+            <br>
+
+            <div>
+                После последнего пункта стрелка не нужна
+                и она убирается комбинацией свойства content
+                со значением none и псевдокласса :last-child.
+            </div>
+
+        </div>
+
+        <div class="code-example second-example">
+
+<pre>
+.breadcrumb &gt; li:last-child::after {
+
+    content: none;
+}
+</pre>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

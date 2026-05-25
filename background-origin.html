@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>background-origin</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>background-origin</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Свойство background-origin
+                определяет область позиционирования
+                фонового рисунка.
+            </div>
+
+            <br>
+
+            <div>
+                Это свойство не применяется,
+                когда значение
+                background-attachment
+                задано как fixed.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис:</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    background-origin:
+                    [padding-box | border-box | content-box]
+                    [, [padding-box | border-box | content-box]]*
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                <b>padding-box</b> —
+                фон позиционируется
+                относительно края элемента
+                с учетом толщины границы.
+            </div>
+
+            <br>
+
+            <div>
+                <b>border-box</b> —
+                фон позиционируется
+                относительно границы,
+                при этом линия границы
+                может перекрывать изображение.
+            </div>
+
+            <br>
+
+            <div>
+                <b>content-box</b> —
+                фон позиционируется
+                относительно содержимого элемента.
+            </div>
+
+            <br>
+
+            <div>
+                Значений может быть несколько
+                (для каждого из множественных
+                фоновых рисунков),
+                при этом значения разделяются
+                между собой запятой.
+            </div>
+
+            <br>
+
+            <div>
+                Результат использования значений
+                свойства background-origin
+                для элемента с рамкой толщиной
+                20 пикселов показан на рис. 1.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;background-origin&lt;/title&gt;
+
+&lt;style&gt;
+
+.block {
+
+    border:
+    20px solid rgba(255,255,255,0.5);
+
+    padding:
+    20px;
+
+    background:
+    url(images/pattern.png)
+    no-repeat;
+
+    background-origin:
+    padding-box;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="block"&gt;
+
+    Содержимое элемента
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img9.jpg" alt="Пример background-origin">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

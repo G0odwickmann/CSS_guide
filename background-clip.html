@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>background-clip</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>background-clip</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                определяет область, до которой будет растягиваться
+                фоновый цвет или изображение элемента, фактически
+                «обрезая» его по границам блока
+                (border, padding или content)
+            </div>
+
+            <br>
+
+            <div>
+                <b>padding-box</b> — Фон отображается внутри границ.
+            </div>
+
+            <br>
+
+            <div>
+                <b>border-box</b> — Фон выводится под границами.
+            </div>
+
+            <br>
+
+            <div>
+                <b>content-box</b> — Фон отображается только внутри контента.
+            </div>
+
+            <br>
+
+            <div>
+                Значений может быть несколько
+                (для каждого из множественных фоновых рисунков),
+                при этом значения разделяются между собой запятой.
+            </div>
+
+            <br>
+
+            <div>
+                Результат использования значений свойства
+                background-clip для элемента с пунктирной рамкой
+                толщиной 10 пикселов
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img4.jpg" alt="Пример background-clip">
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Примеры:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;background-clip&lt;/title&gt;
+
+&lt;style&gt;
+
+.example {
+
+    background:
+    #f5392f
+    url(images/gear.png);
+
+    border:
+    10px dotted red;
+
+    background:
+    #f5392f;
+
+    padding:
+    10px;
+
+    color:
+    #fff;
+
+    min-height:
+    48px;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="example"&gt;
+Содержимое страницы
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис:</h2>
+
+            <div class="syn-txt-page">
+                <i>
+                    background-clip:
+                    [padding-box | border-box | content-box]
+                    [, [padding-box | border-box | content-box]]
+                </i>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

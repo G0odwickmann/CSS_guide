@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>border</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>border</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Универсальное свойство border позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента. Значения могут идти в любом порядке, разделяясь пробелом, браузер сам определит, какое из них соответствует нужному свойству. Для установки границы только на определенных сторонах элемента, воспользуйтесь свойствами border-top, border-bottom, border-left, border-right.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    border: [border-width||border-style||border-color] | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+<div class="desc-page">
+
+    <div>
+
+        <i>
+            Если вам нужно указать
+            какую-то определенную сторону,
+            можно использовать свойства:
+
+            border-left,
+            border-right,
+            border-bottom
+            и border-top.
+
+            Для них точно так же
+            можно задавать цвет,
+            толщину,
+            стиль линии
+            и другие параметры.
+
+            Например,
+            вы можете сделать
+            абсолютное безумие
+            с оформлением границ!
+
+            Пример такого эксперимента
+            приведён ниже.
+        </i>
+
+    </div>
+
+</div>
+
+<div class="example-page">
+
+    <h2>Пример эксперимента:</h2>
+
+    <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;border madness&lt;/title&gt;
+
+&lt;style&gt;
+
+.box {
+
+    width: 350px;
+
+    padding: 20px;
+
+    margin: 40px auto;
+
+    background: #fff4cc;
+
+    color: #222;
+
+    font-size: 18px;
+
+    border-top:
+    8px dotted hotpink;
+
+    border-right:
+    14px double lime;
+
+    border-bottom:
+    10px dashed cyan;
+
+    border-left:
+    18px groove orange;
+
+    border-radius: 20px;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="box"&gt;
+
+    Здесь происходит
+    настоящее безумие
+    с border-свойствами!
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+    </div>
+
+</div>
+
+<div class="desc-page">
+
+    <div>
+        Результат использования
+        разных стилей, цветов
+        и размеров границ
+        показан на рисунке ниже.
+    </div>
+
+</div>
+
+<div class="result-image">
+
+    <img src="img/img14.jpg"
+         alt="Эксперимент с border">
+
+</div>
+
+        <div class="desc-page">
+
+            <div>
+                Значение border-width определяет толщину границы. Для управления ее видом предоставляется несколько значений border-style. Их названия и результат действия представлен на рис. 1.
+            </div>
+
+            <br>
+
+            <div class="result-image">
+
+                <img src="img/img12.png" alt="Рисунок1">
+
+            </div>
+
+            <br>
+
+            <div>
+                border-color устанавливает цвет границы, значение может быть в любом допустимом для CSS формате.
+            </div>
+
+            <br>
+
+            <div>
+                inherit наследует значение родителя.
+            </div>
+        </div>
+
+        <div class="example-page">
+
+    <h2>Пример:</h2>
+
+    <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;background-size&lt;/title&gt;
+&lt;style&gt;
+
+div {
+    height: 200px; /* Высота блока */
+    border: 2px solid #000; /* Параметры рамки */
+
+    background:
+    url(images/mybg.png)
+    100% 100%
+    no-repeat;
+
+    background-size: cover;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div&gt;...&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+    </div>
+
+</div>
+        
+        <div class="desc-page">
+
+            <div>
+                В данном примере вокруг слоя добавляется двойная граница. Результат показан на рис. 2.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img13.png" alt="Результат border">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

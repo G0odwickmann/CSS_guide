@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>background-image</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>background-image</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает фоновое изображение
+                для элемента.
+            </div>
+
+            <br>
+
+            <div>
+                Если одновременно для элемента
+                задан цвет фона,
+                он будет показан,
+                пока фоновая картинка
+                не загрузится полностью.
+            </div>
+
+            <br>
+
+            <div>
+                То же произойдет,
+                если изображения недоступны
+                или их показ в браузере отключен.
+            </div>
+
+            <br>
+
+            <div>
+                В случае наличия
+                в рисунке прозрачных областей,
+                через них будет проглядывать
+                фоновый цвет.
+            </div>
+
+            <br>
+
+            <div>
+                В CSS3 допустимо указывать
+                несколько фоновых изображений,
+                перечисляя их параметры через запятую.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 1:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;background-image&lt;/title&gt;
+
+&lt;style&gt;
+
+body {
+
+    background-image:
+    url(images/bg.jpg);
+
+    background-color:
+    #c7b39b;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;p&gt;...&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img7.png" alt="Пример background-image">
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 2:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;Фон для TR&lt;/title&gt;
+
+&lt;style&gt;
+
+table {
+
+    width: 100%;
+
+    border-spacing: 0;
+}
+
+tr {
+
+    background:
+    #f6d654
+    url(images/orangebg.png)
+    repeat-y;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;table&gt;
+
+&lt;tr&gt;
+
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img8.png" alt="Второй пример background-image">
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис CSS2.1</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    background-image:
+                    url(путь к файлу)
+                    | none
+                    | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис CSS3</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    background-image:
+                    url(путь к файлу)
+                    | none
+                    [, url(путь к файлу)
+                    | none]*
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                <b>url()</b> —
+                задаёт путь к графическому файлу.
+            </div>
+
+            <br>
+
+            <div>
+                Путь к файлу можно писать
+                как в кавычках
+                (двойных или одинарных),
+                так и без них.
+            </div>
+
+            <br>
+
+            <div>
+                <b>none</b> —
+                отменяет фоновое изображение
+                для элемента.
+            </div>
+
+            <br>
+
+            <div>
+                <b>inherit</b> —
+                наследует значение родителя.
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

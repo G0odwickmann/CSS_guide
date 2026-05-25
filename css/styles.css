@@ -1,0 +1,859 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #9BD3C3;
+    color: #F9FDFC;
+    margin: 0;
+}
+
+/*Шапка*/
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #41B3A3;
+    height: 55px;
+    padding-top: 3px;
+}
+
+.header-container a{
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Главная страница*/
+
+.test-bg {
+
+    width: 100%;
+
+    height: 470px;
+
+    background-image: url("../img/main_page_bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.logo-main {
+    width: 500px;
+}
+
+.main-content-welcome-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 59px;
+    background: linear-gradient(#9BD3C3 #41B3A3);
+}
+
+.text-f {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-button {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #E8A87C;
+    border: 2px solid #009E9B;
+    border-radius: 25px;
+    font-size: 30px;
+    margin-top: 87px;
+    width: 360px;
+    height: 60px;
+    transition: all 0.3s ease
+}
+
+.main-button a {
+    color: #FAD2AF;
+    text-decoration: none;
+    transition: all 0.3s ease
+}
+
+.main-button:hover{
+    width: 380px;
+    height: 75px;
+    background-color: #E27D60;
+}
+
+.main-button a:hover {
+    color: #F2FFFF;
+}
+
+/*Поисковая строка*/
+
+.search-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.search-field {
+    width: 300px;
+    height: 40px;
+    margin-left: 11px;
+    border: 0;
+    padding: 0 17px;
+}
+
+/*Мейн - содержание сайта*/
+
+main.container {
+    display: flex;
+    width: 96%;
+    margin: 20px auto 40px;
+    align-items: stretch;
+    background-color: #F2FFFF;
+}
+
+/* Сайдбар */
+.sidebar {
+    width: 240px;
+    background-color: #E27D60;
+    padding-top: 18px;
+    flex-shrink: 0;
+}
+
+.nav-items {
+    width: 200px;
+}
+
+.nav-item {
+    padding: 16px 22px;
+    border-bottom: 8px solid rgba(255,255,255,0.15);
+}
+
+.nav-item a {
+    color: #FFE9E2;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    color: #000;
+    margin: 40px 0 15px;
+    font-weight: 500;
+}
+
+.sidebar ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 4px;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.sidebar a {
+    color: #F9C3BF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.arrow-icon {
+    margin-left: 11px;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Контент */
+.content {
+    flex-grow: 1;
+    background-color: #F2FFFF;
+    padding: 25px 25px 0 35px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.content h1,
+.content p {
+    display: none;
+}
+
+.letter-section {
+    margin-bottom: 40px;
+}
+
+.letter-section h2 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.properties-list .column {
+    min-width: 180px;
+}
+
+.properties-list ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.properties-list li {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.properties-list a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.properties-list a:hover {
+    color: #000;
+}
+
+/*Настройки для страниц с контента*/
+
+.sidebar-page {
+    width: 240px;
+    background: #EF8388;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-height: 100%;
+}
+
+.head-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desc-page {
+    max-width: 950px;
+}
+
+.syntax-page {
+    padding-bottom: 40px;
+}
+
+.syn-txt-page {
+    background: #FFF1E5;
+    width: fit-content;
+}
+
+/* расположение картинок по центру блока */
+
+.ex-page-dop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ex-page-dop div {
+    width: 100%;
+    text-align: left;
+}
+
+.ex-page-dop img {
+    display: block;
+    margin: 20px auto 0;
+}
+
+/*Кнопка назад*/
+
+.btn-back {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #E27D60;
+    color: #F2FFFF;
+    border: 2px solid #C9654B;
+    border-radius: 14px;
+    padding: 10px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.btn-back:hover {
+    background-color: #41B3A3;
+    border-color: #2B8C80;
+    transform: translateY(-2px);
+}
+
+.btn-back:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/*таблица imp*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+code {
+    background-color: #f9f9f9;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+.css-block {
+    background-color: #eef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+/*Код блок*/
+
+.code-example {
+    background-color: #F3EFEA;
+    border-left: 6px solid #41B3A3;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin: 25px 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+/*Код текст*/
+
+.code-example pre {
+    margin: 0;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #444;
+    white-space: pre-wrap;
+}
+
+/*Выделение тэгов в коде*/
+
+.code-example pre .tag {
+    color: #2B8C80;
+}
+
+/*Выделение свойств в коде*/
+
+.code-example pre .property {
+    color: #E27D60;
+    font-weight: 600;
+}
+
+/*Выделение значений в коде*/
+
+.code-example pre .value {
+    color: #7D5A50;
+}
+
+/*Второй пример*/
+
+.second-example {
+    max-width: 700px;
+}
+
+/*Заголовок "Результат"*/
+
+.result-title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+}
+
+/*Картинка результата*/
+
+.result-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.result-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 3px solid #D8C3A5;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+/*Поиск*/
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-results {
+    position: absolute;
+    top: 45px;
+    left: 11px;
+    width: 334px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+}
+
+.search-result-item {
+    display: block;
+    padding: 12px 16px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.search-result-item:hover {
+    background-color: #F2FFFF;
+}
+
+/* Minecraft splash text */
+
+.minecraft-splash {
+
+    position: absolute;
+
+    top: 30px;
+
+    left: 60px;
+
+    width: 240px;
+
+    text-align: center;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    word-wrap: break-word;
+
+    transform: rotate(-15deg);
+
+    z-index: 10;
+
+    text-shadow:
+        2px 2px 0 rgba(0,0,0,0.25);
+
+    animation:
+        splashScale 1.2s ease-in-out infinite,
+        splashColors 6s linear infinite;
+
+    user-select: none;
+
+    pointer-events: none;
+}
+/* Анимация увеличения */
+
+@keyframes splashScale {
+
+    0% {
+        transform:
+        rotate(-15deg)
+        scale(1);
+    }
+
+    50% {
+        transform:
+        rotate(-15deg)
+        scale(1.12);
+    }
+
+    100% {
+        transform:
+        rotate(-15deg)
+        scale(1);
+    }
+}
+
+/* Переливание цветов */
+
+@keyframes splashColors {
+
+    0% {
+        color: #FFE082;
+    }
+
+    20% {
+        color: #F8B195;
+    }
+
+    40% {
+        color: #E27D60;
+    }
+
+    60% {
+        color: #41B3A3;
+    }
+
+    80% {
+        color: #9BD3C3;
+    }
+
+    100% {
+        color: #FFE082;
+    }
+}
+
+/*АДАПТИИИИВ*/
+
+/* =========================
+   АДАПТИВ ДЛЯ НОУТБУКОВ
+========================= */
+
+@media (max-width: 1400px) {
+
+    .logo-main {
+
+        width: 650px;
+    }
+
+    .minecraft-splash {
+
+    top: 35px;
+
+    right: 15px;
+
+    width: 170px;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    transform: rotate(-12deg);
+}
+
+    .search-block {
+
+        width: 95%;
+
+        height: auto;
+
+        padding: 25px;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search-text-block {
+
+        width: 100%;
+    }
+
+    .arrow-icon {
+
+        display: none;
+    }
+
+    .search-wrapper {
+
+        width: 100%;
+    }
+
+    .search-field {
+
+        width: 100%;
+    }
+
+    .search-results {
+
+        width: 100%;
+
+        left: 0;
+    }
+
+    .properties-grid {
+
+        gap: 20px;
+    }
+
+    .property-column {
+
+        width: 45%;
+    }
+}
+
+
+/* =========================
+   ПЛАНШЕТЫ
+========================= */
+
+@media (max-width: 1000px) {
+
+    .logo-main {
+
+        width: 500px;
+    }
+
+    .minecraft-splash {
+
+        right: 180px;
+
+        top: 60px;
+
+        font-size: 20px;
+
+        width: 220px;
+    }
+
+    .search-block {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .search-text-block {
+
+        width: 100%;
+    }
+
+    .search-field {
+
+        width: 100%;
+    }
+
+    .properties-grid {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .property-column {
+
+        width: 90%;
+    }
+}
+
+
+/* =========================
+   ТЕЛЕФОНЫ
+========================= */
+
+@media (max-width: 700px) {
+
+    .header-container {
+
+        justify-content: center;
+    }
+
+    .logo-main {
+
+        width: 320px;
+    }
+
+    .minecraft-splash {
+
+        top: 35px;
+
+        right: 50%;
+
+        transform:
+        translateX(50%)
+        rotate(-12deg);
+
+        width: 180px;
+
+        font-size: 15px;
+    }
+
+    @keyframes splashScale {
+
+        0% {
+
+            transform:
+            translateX(50%)
+            rotate(-12deg)
+            scale(1);
+        }
+
+        50% {
+
+            transform:
+            translateX(50%)
+            rotate(-12deg)
+            scale(1.1);
+        }
+
+        100% {
+
+            transform:
+            translateX(50%)
+            rotate(-12deg)
+            scale(1);
+        }
+    }
+
+    .search-block {
+
+        width: 95%;
+
+        padding: 18px;
+    }
+
+    .search-text-block p {
+
+        font-size: 15px;
+
+        line-height: 1.4;
+    }
+
+    .search-field {
+
+        width: 100%;
+
+        font-size: 15px;
+    }
+
+    .search-results {
+
+        width: 100%;
+    }
+
+    .property-column {
+
+        width: 100%;
+    }
+
+    .property-column li {
+
+        font-size: 15px;
+    }
+
+    footer {
+
+        text-align: center;
+
+        padding: 15px;
+    }
+}
+
+/*табличка border-style*/
+
+
+.border-style-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.border-style-table th,
+.border-style-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+}
+
+.demo {
+    padding: 10px;
+    background: #fff;
+    color: #000;
+}
+
+.b1 { border-width: 1px; }
+.b3 { border-width: 3px; }
+.b5 { border-width: 5px; }
+.b7 { border-width: 7px; }
+
+.dotted {
+    border-style: dotted;
+    border-color: #E0B000;
+}
+
+.dashed {
+    border-style: dashed;
+    border-color: #E0B000;
+}
+
+.solid {
+    border-style: solid;
+    border-color: #E0B000;
+}
+
+.double {
+    border-style: double;
+    border-color: #E0B000;
+}
+
+.groove {
+    border-style: groove;
+    border-color: #B99700;
+}
+
+.ridge {
+    border-style: ridge;
+    border-color: #B99700;
+}
+
+.inset {
+    border-style: inset;
+    border-color: #E0B000;
+}
+
+.outset {
+    border-style: outset;
+    border-color: #E0B000;
+}

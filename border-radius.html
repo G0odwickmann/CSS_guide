@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>border-radius</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>border-radius</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает радиус скругления уголков рамки. Если рамка не задана, то скругление также происходит и с фоном.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    border-radius: &lt;радиус&gt;{1,4} [ / &lt;радиус&gt;{1,4}]
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="table-page">
+
+            <table class="radius-table">
+
+                <tr>
+                    <th>Число значений</th>
+                    <th>Результат</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Радиус указывается для всех четырех уголков.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Первое значение задает радиус верхнего левого и нижнего правого уголка, второе значение — верхнего правого и нижнего левого уголка.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>
+                        Первое значение задает радиус для верхнего левого уголка, второе — одновременно для верхнего правого и нижнего левого, а третье — для нижнего правого уголка.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>
+                        По очереди устанавливает радиус для верхнего левого, верхнего правого, нижнего правого и нижнего левого уголка.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;border-radius&lt;/title&gt;
+
+    &lt;style&gt;
+
+        .radius {
+            background: #f0f0f0;
+            border: 1px solid black;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div style="border-radius: 50px 0 0 50px;" class="radius"&gt;
+        border-radius: 50px 0 0 50px;
+    &lt;/div&gt;
+
+    &lt;div style="border-radius: 40px 10px" class="radius"&gt;
+        border-radius: 40px 10px;
+    &lt;/div&gt;
+
+    &lt;div style="border-radius: 10em/1em;" class="radius"&gt;
+        border-radius: 10em/1em;
+    &lt;/div&gt;
+
+    &lt;div style="border-radius: 13em 0.5em/1em 0.5em;" class="radius"&gt;
+        border-radius: 13em 0.5em/1em 0.5em;
+    &lt;/div&gt;
+
+    &lt;div style="border-radius: 8px;" class="radius"&gt;
+        border-radius: 8px;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения различных значений свойства border-radius показан ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img15.png" alt="Результат border-radius">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

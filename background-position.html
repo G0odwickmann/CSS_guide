@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>background-position</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>background-position</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Задает начальное положение
+                фонового изображения,
+                установленного с помощью
+                свойства background-image.
+            </div>
+
+            <br>
+
+            <div>
+                В CSS3 допустимо указывать
+                несколько значений
+                для каждого фона,
+                перечисляя значения через запятую.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис CSS2.1</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    background-position:
+                    [left | center | right |
+                    &lt;проценты&gt; | &lt;значение&gt;]
+                    ||
+
+                    [top | center | bottom |
+                    &lt;проценты&gt; | &lt;значение&gt;]
+                    | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис CSS3</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    background-position:
+                    &lt;позиция&gt;
+                    [, &lt;позиция&gt;]*
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                У свойства background-position
+                два значения:
+                положение по горизонтали
+                и положение по вертикали.
+            </div>
+
+            <br>
+
+            <div>
+                По горизонтали используются:
+                left, center, right.
+            </div>
+
+            <br>
+
+            <div>
+                По вертикали используются:
+                top, center, bottom.
+            </div>
+
+            <br>
+
+            <div>
+                Кроме ключевых слов
+                положение также можно задавать
+                в процентах, пикселах
+                или других единицах измерения.
+            </div>
+
+            <br>
+
+            <div>
+                Если применяются ключевые слова,
+                порядок их следования
+                не имеет значения.
+            </div>
+
+            <br>
+
+            <div>
+                При процентной записи
+                сначала указывается положение
+                по горизонтали,
+                а затем — по вертикали.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 1:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Strict//EN"
+
+"http://www.w3.org/TR/xhtml1/
+DTD/xhtml1-strict.dtd"&gt;
+
+&lt;html xmlns=
+"http://www.w3.org/1999/xhtml"&gt;
+
+&lt;head&gt;
+
+&lt;meta http-equiv="Content-Type"
+content="text/html;
+charset=utf-8" /&gt;
+
+&lt;title&gt;background-position&lt;/title&gt;
+
+&lt;style type="text/css"&gt;
+
+html {
+
+    height: 100%;
+}
+
+body {
+
+    background-image:
+    url(images/mybg.png);
+
+    background-position:
+    right bottom;
+
+    background-repeat:
+    no-repeat;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;p&gt;...&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 2:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;background-position&lt;/title&gt;
+
+&lt;style&gt;
+
+body {
+
+    background-image:
+    url(images/pattern-left.png),
+    url(images/pattern-right.png);
+
+    background-repeat:
+    repeat-y, repeat-y;
+
+    background-position:
+    left, right;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div style="height:2000px"&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Соотношение между ключевыми словами
+                и процентной записью:
+            </div>
+
+            <br>
+
+            <div>
+                <b>top left</b> = 0% 0%
+                — левый верхний угол.
+            </div>
+
+            <br>
+
+            <div>
+                <b>center</b> = 50% 50%
+                — расположение по центру.
+            </div>
+
+            <br>
+
+            <div>
+                <b>right bottom</b> = 100% 100%
+                — правый нижний угол.
+            </div>
+
+            <br>
+
+            <div>
+                В скобках указывается,
+                где располагается фоновый рисунок
+                относительно контейнера.
+            </div>
+
+            <br>
+
+            <div>
+                При inherit значение
+                наследуется от родителя элемента.
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Наковальня CSS</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="./index.html"><img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;"></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="welcome-content">
+            <div class="bg-welcome-content">
+                <div class="test-bg">
+
+    <img src="img/logo_main.svg"
+         alt="LOGO_MAIN"
+         class="logo-main">
+
+    <!--Иногда нужно мне запретить придумывать всякие штуки для сайта, которых изначально не было на макете пхпхпхпх-->
+
+    <div class="minecraft-splash" id="splashText">
+        У программистов нет плохих привычек, их профессия уже как привычка... Хорошая или нет решать вам
+    </div>
+
+    <!--НО НАДПИСЬ ИЗ МАЙНКРАФТА ЭТО ЖЕ ЛЮТАЯ ИМБА-->
+
+</div>
+            </div>
+        </div>
+        <div class="main-content-welcome-page">
+            <div class="container">
+                <div class="main-text">
+                    <p class="text-f">Данный сайт нацелен на новоприбывших в сферу веб разработки студентов веб программистов</p>
+
+                    <p class="text-s">на данном сайте вы можете посмотреть или повторить свойства стилей CSS</p>
+                </div>
+            </div>
+
+            <button class="main-button"><a href="./main.html">Перейти к справочнику</a></button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            
+        </div>
+    </footer>
+
+    <script>
+
+const splashTexts = [
+
+    "Группа П-11 передает вам привет! ^^",
+    "А ты почистил зубы сегодня?",
+    "У тебя все получится!",
+    "Никаких сикс севен в мою смену >:(",
+    "У тебя есть 7 минут, чтобы освоить CSS",
+    "Never Gonna Give You Up", /*ЛЕГЕНДА ЮТУБА*/
+    "1000 - 7 это будет 993", /*Ну это совсем для тех, кто шарит*/
+    "Dungeons & Dragons? Нет, я предпочетаю CSS & HTML",
+    "ЭЙ СТУДЕНТ ВОЗЬМИ ТРУБКУ! ЧУВА-А-А-А-А-АК!!", /*Фраза-аналог из очень страшного кино*/
+    "Шаг влево шаг вправо и ты уже ошибся :(",
+    "Вы не могли бы подписать мою петицию?", /*Фраза Постал Дюда*/
+    "В самой холодной темноте ночи я позволю этому сиять...", /*Фраза Лиланд Койла*/
+    "Видишь? Настоящая классика, не выходит из моды", /*Кукла Чаки*/
+    "Восторг пурпурной пальмы вам о чем нибудь говорит?", /*ДЖОНАТАН БАЙЕРС ИЗ ОЧЕНЬ СТРАННЫХ ДЕЛ--*/
+    "Быть самим собой это есть истинная свобода", /*цитата от Платона*/
+    "Я немало испытал, но любить не перестал, Те места, что душу трогают, заповедные места", /*цитата от Даши*/
+    "Сдается тот, кто боится, а нам терять нечего - боремся до последнего!", /*цитата от меня любимой*/
+    "Острее лезвия ножа может быть только очевидная ошибка в коде", /**/
+    "Студент, студент мы должны верстать", /*Отсылка на во все тяжкие*/
+    "В этом проекте страниц больше, чем у взрослого человека зубов с учетом зубов мудрости (и это страшно)! :D", /**/
+    "Turn around, look at what you see, In her face the mirror of your dreams", /*снова оч странные дела*/
+    "Лучше звоните верстальщику", /*Лучше звоните Солу*/
+    "У программистов есть что-то вроде своей Эйвы, мудрого дерева... Серверная!", /*отсылка на аватаров*/
+    "Почему мои магниты падают с холодильника?" /*оч странные дела--*/
+
+];
+
+const splashElement =
+document.getElementById("splashText");
+
+const randomText =
+splashTexts[
+    Math.floor(
+        Math.random() *
+        splashTexts.length
+    )
+];
+
+splashElement.textContent = randomText;
+
+</script>
+</body>
+</html>

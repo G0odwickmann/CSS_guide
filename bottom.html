@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>bottom</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>bottom</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <!-- Описание -->
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает положение нижнего края содержимого элемента
+                без учета толщины рамок и отступов. Отсчет координат зависит
+                от свойства position, оно обычно принимает значение relative
+                (относительное положение) или absolute (абсолютное положение).
+            </div>
+
+        </div>
+
+        <div class="desc-page" style="margin-top: 20px;">
+
+            <div>
+                При относительном позиционировании элемента, отсчет ведется
+                от нижнего края исходного положения элемента, а при абсолютном —
+                относительно нижнего края окна браузера (рис. 1). Если для
+                родительского элемента задано position: relative, то абсолютное
+                позиционирование дочерних элементов определяет их положение
+                от нижнего края родителя (рис. 2).
+            </div>
+
+        </div>
+
+        <!-- Картинки -->
+
+        <div class="ex-page-dop">
+
+            <div>
+
+                <h2>Рис. 1</h2>
+
+                <img src="img/img18.png" alt="bottom relative">
+
+            </div>
+
+        </div>
+
+        <div class="ex-page-dop">
+
+            <div>
+
+                <h2>Рис. 2</h2>
+
+                <img src="img/img19.png" alt="bottom absolute">
+
+            </div>
+
+        </div>
+
+        <!-- Дополнительный текст -->
+
+        <div class="desc-page" style="margin-top: 20px;">
+
+            <div>
+                Если одновременно задано свойство top и bottom со значениями
+                отличными от auto, то свойство bottom игнорируется.
+            </div>
+
+        </div>
+
+        <!-- Синтаксис -->
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    bottom: значение | проценты | auto | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <!-- Значения -->
+
+        <div class="desc-page">
+
+            <div>
+                В качестве значений принимаются любые единицы длины,
+                принятые в CSS — например, пикселы (px), дюймы (in),
+                пункты (pt) и др. Значение свойства bottom может быть
+                и отрицательным, в этом случае возможны наложения разных
+                элементов друг на друга. При задании значения в процентах,
+                положение элемента вычисляется в зависимости от высоты
+                родительского элемента.
+            </div>
+
+        </div>
+
+        <!-- Таблица -->
+
+        <table style="margin-top: 25px;">
+
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+
+            <tr>
+                <td>auto</td>
+                <td>Не изменяет положение элемента.</td>
+            </tr>
+
+            <tr>
+                <td>inherit</td>
+                <td>Наследует значение родителя.</td>
+            </tr>
+
+        </table>
+
+        <div class="desc-page">
+
+            <div>
+                Кроме перечисленных в таблице значений используются
+                следующие ключевые слова.
+            </div>
+
+        </div>
+
+        <!-- Пример -->
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;bottom&lt;/title&gt;
+
+    &lt;style&gt;
+
+        #layer {
+            bottom: 20px; /* Расстояние от нижнего края окна браузера */
+            position: absolute; /* Абсолютное позиционирование */
+            background: #f0f0f0; /* Цвет фона */
+            padding: 7px; /* Поля вокруг текста */
+            border: solid 1px black; /* Параметры рамки */
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div id="layer"&gt;
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed diem nonummy nibh euismod
+        tincidunt ut lacreet dolore magna
+        aliquam erat volutpat.
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <!-- Результат -->
+
+        <div class="result-title">
+            Результат
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img20.png" alt="Результат bottom">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

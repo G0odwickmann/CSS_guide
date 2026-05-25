@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>box-shadow</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>box-shadow</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Добавляет тень к элементу. Допускается использовать несколько
+                теней, указывая их параметры через запятую, при наложении теней
+                первая тень в списке будет выше, последняя ниже. Если для элемента
+                задается радиус скругления через свойство border-radius,
+                то тень также получится с закругленными уголками.
+                Добавление тени увеличивает ширину элемента, поэтому возможно
+                появление горизонтальной полосы прокрутки в браузере.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+<pre>
+box-shadow: none | &lt;тень&gt; [, &lt;тень&gt;]*
+
+где &lt;тень&gt;:
+inset &lt;сдвиг по x&gt; &lt;сдвиг по y&gt;
+&lt;радиус размытия&gt; &lt;растяжение&gt; &lt;цвет&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+
+                <p>
+                    <b>none</b><br>
+                    Отменяет добавление тени.
+                </p>
+
+                <p>
+                    <b>inset</b><br>
+                    Тень выводится внутри элемента. Необязательный параметр.
+                </p>
+
+                <p>
+                    <b>сдвиг по x</b><br>
+                    Смещение тени по горизонтали относительно элемента.
+                    Положительное значение этого параметра задает сдвиг тени вправо,
+                    отрицательное — влево. Обязательный параметр.
+                </p>
+
+                <p>
+                    <b>сдвиг по y</b><br>
+                    Смещение тени по вертикали относительно элемента.
+                    Положительное значение задает сдвиг тени вниз,
+                    отрицательное — вверх. Обязательный параметр.
+                </p>
+
+                <p>
+                    <b>размытие</b><br>
+                    Задает радиус размытия тени. Чем больше это значение,
+                    тем сильнее тень сглаживается, становится шире и светлее.
+                    Если этот параметр не задан, по умолчанию устанавливается
+                    равным 0, тень при этом будет четкой, а не размытой.
+                </p>
+
+                <p>
+                    <b>растяжение</b><br>
+                    Положительное значение растягивает тень,
+                    отрицательное, наоборот, ее сжимает.
+                    Если этот параметр не задан, по умолчанию устанавливается 0,
+                    при этом тень будет того же размера, что и элемент.
+                </p>
+
+                <p>
+                    <b>цвет</b><br>
+                    Цвет тени в любом доступном CSS формате,
+                    по умолчанию тень черная.
+                    Необязательный параметр.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Допускается указывать несколько теней, разделяя их параметры
+                между собой запятой. Учитывается следующий порядок:
+                первая тень в списке размещается на самом верху,
+                последняя в списке — в самом низу.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;box-shadow&lt;/title&gt;
+
+    &lt;style&gt;
+
+        .shadow {
+            background: #fc0; /* Цвет фона */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+            padding: 10px;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="shadow"&gt;
+        В чащах юга жил бы цитрус?
+        Да, но фальшивый экземпляр!
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства box-shadow:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img21.png" alt="Результат box-shadow">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

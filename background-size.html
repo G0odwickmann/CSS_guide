@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>background-size</title>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>background-size</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Масштабирует фоновое изображение согласно заданным размерам.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    background-size: [ <значение> | <проценты> | auto ]{1,2} | cover | contain
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                <b><значение></b> —
+                Задает размер в любых доступных для CSS единицах — пикселы (px), сантиметры (cm), em и др.
+            </div>
+
+            <br>
+
+            <div>
+                <b><проценты></b> —
+                Задает размер фоновой картинки в процентах от ширины или высоты элемента.
+            </div>
+
+            <br>
+
+            <div>
+                <b>auto</b> —
+                Если задано одновременно для ширины и высоты (auto auto), размеры фона остаются исходными; если только для одной стороны картинки (100px auto), то размер вычисляется автоматически исходя из пропорций картинки.
+            </div>
+
+            <br>
+
+            <div>
+                <b>cover</b> —
+                Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.
+            </div>
+
+            <br>
+
+            <div>
+                <b>contain</b> —
+                Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Примеры:</h2>
+
+            <div class="code-example">
+
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;background-size&lt;/title&gt;
+&lt;style&gt;
+div {
+        height: 200px; /* Высота блока */
+        border: 2px solid #000; /* Параметры рамки */
+        background: url(images/mybg.png) 100% 100% no-repeat; /* Добавляем фон */
+        background-size: cover; /* Масштабируем фон */
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;...&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/pre&gt;
+                </pre>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
