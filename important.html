@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Наковальня CSS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="./index.html"><img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;"></a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <aside class="sidebar-page"></aside>
+    
+        <section class="content">
+            <div class="head-page">
+                <h2>!important</h2>
+
+                <a href="./main.html"><button class="btn-back">&laquo;Назад</button></a>
+            </div>
+
+            <div class="desc-page">
+                <div>это правило, повышающее приоритет конкретного стиля, заставляя браузер игнорировать разногласия в стилях и использовать значение именно с !important</div>
+            </div>
+
+            <div class="ex-page-table">
+                <h2>Примеры:</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Стиль Автора (CSS в &lt;style&gt; блоке)</th>
+                            <th>Стиль Пользователя (CSS в &lt;style&gt; блоке)</th>
+                            <th>Результат</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+    <tr>
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                background: #f2f2f2; <br>
+                color: gray; <br>
+                padding: 10px; <br>
+                border: 1px solid silver; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                background: #222; <br>
+                color: white; <br>
+                padding: 25px; <br>
+                border: 3px solid black; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div style="background:#222; color:white; padding:25px; border:3px solid black;">
+                Это пример текста
+            </div>
+
+            <div class="result-text">
+                <b>Объяснение:</b>
+                Стили пользователя были подключены позже, поэтому браузер применил тёмный фон, белый текст, увеличенные отступы и чёрную рамку.
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                color: silver; <br>
+                font-size: 12px; <br>
+                border: 1px solid gray; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                color: black <span class="important">&excl;important</span>; <br>
+                font-size: 18px; <br>
+                border: 4px dashed red <span class="important">&excl;important</span>; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div style="color:black; font-size:18px; border:4px dashed red; padding:10px;">
+                Это пример текста
+            </div>
+
+            <div class="result-text">
+                <b>Объяснение:</b>
+                Свойства color и border помечены как <code>&excl;important</code>, поэтому именно они были применены браузером.
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                background: lightblue; <br>
+                font-size: 14px; <br>
+                border-radius: 0px; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                background: orange <span class="important">&excl;important</span>; <br>
+                font-size: 20px <span class="important">&excl;important</span>; <br>
+                border-radius: 20px; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div style="background:orange; font-size:20px; border-radius:20px; padding:15px;">
+                Это пример текста
+            </div>
+
+            <div class="result-text">
+                <b>Объяснение:</b>
+                Фон и размер текста получили повышенный приоритет через <code>&excl;important</code>, поэтому они переопределили стили автора.
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                color: blue <span class="important">&excl;important</span>; <br>
+                background: #ddd <span class="important">&excl;important</span>; <br>
+                padding: 10px; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div class="css-block">
+                BODY { <br>
+                color: darkred <span class="important">&excl;important</span>; <br>
+                background: pink <span class="important">&excl;important</span>; <br>
+                padding: 30px <span class="important">&excl;important</span>; <br>
+                }
+            </div>
+        </td>
+
+        <td>
+            <div style="color:darkred; background:pink; padding:30px;">
+                Это пример текста
+            </div>
+
+            <div class="result-text">
+                <b>Объяснение:</b>
+                Оба набора правил используют <code>&excl;important</code>, но стили пользователя были объявлены позже и поэтому получили приоритет.
+            </div>
+        </td>
+    </tr>
+
+</tbody>
+                </table>
+            </div>
+
+            <div class="ex-page-dop">
+                
+                <h3>Стили пользователя можно подключать в браузере Internet Explorer и Opera:</h3>
+
+                <div><b>Подключение стиля пользователя в Internet Explorer:</b> <i>Сервис > Свойство обозревателя > Оформление</i></div>
+
+                <img src="img/img1.png" alt="Подключение_стилей_в_Int_Exp">
+
+            </div>
+
+            <div class="ex-page-dop">
+
+                <div><b>Подключение стиля пользователя в Opera:</b> <i>Инструменты > Общие настройки > Вкладка «Расширенные» > Содержимое > Кнопка «Настроить стили»</i></div>
+
+                <img src="img/img2.png" alt="Подключение_стилей_в_Opera">
+            </div>
+                
+
+            <div class="syntax-page">
+                <h2>Синтаксис:</h2>
+
+                <div class="syn-txt-page"><i>Свойство: значение !important</i></div>
+            </div>
+            
+        </section>
+    
+    </main>
+</body>
+</html>

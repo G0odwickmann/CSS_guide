@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>font-stretch</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>font-stretch</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает узкое, нормальное или широкое начертание шрифта, 
+                что позволяет уплотнять или расширять текст.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    font-stretch: inherit | ultra-condensed | extra-condensed | condensed |
+                    semi-condensed | normal | semi-expanded | expanded |
+                    extra-expanded | ultra-expanded
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Влияние разных значений font-stretch на вид букв в тексте показано на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img64.png" alt="font-stretch example">
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;font-stretch&lt;/title&gt;
+&lt;style&gt;
+
+div {
+    font-size: 5em;
+    font-family: 'Myriad Pro';
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div&gt;
+    &lt;span style="font-stretch: ultra-condensed"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: extra-condensed"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: condensed"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: semi-condensed"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: normal"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: semi-expanded"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: expanded"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: extra-expanded"&gt;Б&lt;/span&gt;
+    &lt;span style="font-stretch: ultra-expanded"&gt;Б&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

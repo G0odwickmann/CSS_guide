@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>display</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>display</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Многоцелевое свойство, которое определяет,
+                как элемент должен быть показан в документе.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    display: block | inline | inline-block | inline-table |
+                    list-item | none | run-in | table | table-caption |
+                    table-cell | table-column-group | table-column |
+                    table-footer-group | table-header-group |
+                    table-row | table-row-group
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Список возможных значений свойства display
+                достаточно большой.
+                Наиболее популярные значения:
+                block,
+                inline,
+                inline-block,
+                list-item
+                и none.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Значения свойства</h2>
+
+            <table>
+
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+
+                <tr>
+                    <td>block</td>
+                    <td>
+                        Элемент показывается как блочный.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>inline</td>
+                    <td>
+                        Элемент отображается как встроенный.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>inline-block</td>
+                    <td>
+                        Генерирует блочный элемент,
+                        который обтекается другими элементами.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>inline-table</td>
+                    <td>
+                        Определяет,
+                        что элемент является встроенной таблицей.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>list-item</td>
+                    <td>
+                        Элемент выводится как блочный
+                        и добавляется маркер списка.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>none</td>
+                    <td>
+                        Временно удаляет элемент из документа.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>run-in</td>
+                    <td>
+                        Устанавливает элемент как блочный
+                        или встроенный в зависимости от контекста.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table</td>
+                    <td>
+                        Определяет,
+                        что элемент является таблицей.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-caption</td>
+                    <td>
+                        Задает заголовок таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-cell</td>
+                    <td>
+                        Указывает,
+                        что элемент представляет собой ячейку таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-column</td>
+                    <td>
+                        Назначает элемент колонкой таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-column-group</td>
+                    <td>
+                        Определяет группу одной
+                        или более колонок таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-footer-group</td>
+                    <td>
+                        Используется для хранения строк ячеек
+                        внизу таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-header-group</td>
+                    <td>
+                        Используется для хранения строк ячеек
+                        сверху таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-row</td>
+                    <td>
+                        Элемент отображается как строка таблицы.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>table-row-group</td>
+                    <td>
+                        Создает структурный блок
+                        из нескольких строк таблицы.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;display&lt;/title&gt;
+
+&lt;style&gt;
+
+.example {
+
+    border: dashed 1px #634f36;
+    background: #fffff5;
+
+    font-family:
+    "Courier New",
+    Courier,
+    monospace;
+
+    padding: 7px;
+    margin: 0 0 1em;
+}
+
+.exampleTitle {
+
+    border: 1px solid black;
+
+    border-bottom: none;
+
+    padding: 3px;
+
+    display: inline;
+
+    background: #efecdf;
+
+    font-weight: bold;
+
+    font-size: 90%;
+
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="exampleTitle"&gt;
+Пример
+&lt;/div&gt;
+
+&lt;div class="example"&gt;
+
+&lt;b&gt;
+Формула серной кислоты:
+&lt;/b&gt;
+
+&lt;i&gt;
+H&lt;sub&gt;2&lt;/sub&gt;
+SO&lt;sub&gt;4&lt;/sub&gt;
+&lt;/i&gt;
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства
+                display
+                показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img56.png"
+                 alt="Пример display">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

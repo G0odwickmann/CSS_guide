@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>clear</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>clear</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Отменяет обтекание элемента одновременно с правого и левого края.
+                Это свойство применяется к блочным элементам, когда необходимо
+                вернуть обычное течение документа после использования float.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    clear: none | left | right | both | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+
+                <div>
+                    <b>none</b><br>
+                    Отменяет действие свойства clear.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>left</b><br>
+                    Отмена обтекания с левого края элемента.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>right</b><br>
+                    Отмена обтекания с правого края элемента.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>both</b><br>
+                    Отмена обтекания одновременно с левого
+                    и правого края элемента.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>inherit</b><br>
+                    Наследует значение родителя.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;clear&lt;/title&gt;
+
+    &lt;style&gt;
+
+        .layer1 {
+            float: left;
+            width: 200px;
+            background: #DCDCDC;
+            padding: 10px;
+        }
+
+        .layer2 {
+            margin-left: 220px;
+            background: #F0F0F0;
+            padding: 10px;
+        }
+
+        .footer {
+            clear: both;
+            background: #B0C4DE;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="layer1"&gt;
+        Левый блок
+    &lt;/div&gt;
+
+    &lt;div class="layer2"&gt;
+        Основной текст страницы.
+    &lt;/div&gt;
+
+    &lt;div class="footer"&gt;
+        Подвал сайта после clear.
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства clear:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img31.png" alt="Результат clear">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>content</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>content</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Добавляет содержимое к элементу
+                через псевдоэлементы ::before
+                и ::after.
+                Свойство позволяет вставлять текст,
+                изображения, счётчики и другие элементы
+                без изменения HTML-кода страницы.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+    <h2>Синтаксис</h2>
+
+    <div class="syn-txt-page">
+
+        <i>
+            content: строка | attr(параметр) |
+            open-quote | close-quote |
+            no-open-quote | no-close-quote |
+            url | counter | normal |
+            none | inherit
+        </i>
+
+    </div>
+
+</div>
+
+<div class="desc-page">
+
+    <div>
+
+        <div>
+            <b>Строка</b><br>
+            Текст, который добавляется на веб-страницу,
+            строка при этом должна браться в двойные
+            или одинарные кавычки.
+            Допускается использовать юникод
+            для вставки спецсимволов.
+        </div>
+
+        <br>
+
+        <div>
+            <b>attr(параметр)</b><br>
+            Возвращает строку, которая является
+            значением параметра тега указанного
+            в скобках.
+        </div>
+
+        <br>
+
+        <div>
+            <b>open-quote</b><br>
+            Вставляет открывающую кавычку,
+            тип которой устанавливается
+            с помощью свойства quotes.
+        </div>
+
+        <br>
+
+        <div>
+            <b>close-quote</b><br>
+            Вставляет закрывающую кавычку.
+        </div>
+
+        <br>
+
+        <div>
+            <b>no-open-quote</b><br>
+            Отменяет добавление открывающей кавычки.
+        </div>
+
+        <br>
+
+        <div>
+            <b>no-close-quote</b><br>
+            Отменяет добавление закрывающей кавычки.
+        </div>
+
+        <br>
+
+        <div>
+            <b>url</b><br>
+            Абсолютный или относительный адрес
+            вставляемого объекта.
+        </div>
+
+        <br>
+
+        <div>
+            <b>counter</b><br>
+            Выводит значение счетчика,
+            заданного свойством counter-reset.
+        </div>
+
+        <br>
+
+        <div>
+            <b>none</b><br>
+            Не добавляет никакое содержимое.
+        </div>
+
+        <br>
+
+        <div>
+            <b>normal</b><br>
+            Задается как none
+            для псевдоэлементов
+            :before и :after.
+        </div>
+
+        <br>
+
+        <div>
+            <b>inherit</b><br>
+            Наследует значение родителя.
+        </div>
+
+    </div>
+
+</div>
+
+        <div class="example-page">
+
+            <h2>Пример 1:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;content&lt;/title&gt;
+
+    &lt;style&gt;
+
+        del:before {
+            content: "&lt;DEL&gt; ";
+            color: navy;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    Тег &lt;del&gt; используется
+    для выделения текста,
+    который был удален
+    в новой версии документа.
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат первого примера:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img48.png" alt="Результат content">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

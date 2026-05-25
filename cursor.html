@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <title>cursor</title>
+
+    <style>
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #666;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #d9d9d9;
+        }
+
+        .cur-default {
+            cursor: default;
+        }
+
+        .cur-crosshair {
+            cursor: crosshair;
+        }
+
+        .cur-help {
+            cursor: help;
+        }
+
+        .cur-move {
+            cursor: move;
+        }
+
+        .cur-pointer {
+            cursor: pointer;
+        }
+
+        .cur-progress {
+            cursor: progress;
+        }
+
+        .cur-text {
+            cursor: text;
+        }
+
+        .cur-wait {
+            cursor: wait;
+        }
+
+        .cur-n {
+            cursor: n-resize;
+        }
+
+        .cur-ne {
+            cursor: ne-resize;
+        }
+
+        .cur-e {
+            cursor: e-resize;
+        }
+
+        .cur-se {
+            cursor: se-resize;
+        }
+
+        .cur-s {
+            cursor: s-resize;
+        }
+
+        .cur-sw {
+            cursor: sw-resize;
+        }
+
+        .cur-w {
+            cursor: w-resize;
+        }
+
+        .cur-nw {
+            cursor: nw-resize;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+
+            <img src="img/logo.svg"
+                 alt="LOGO"
+                 style="width:165px; height:auto;">
+
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>cursor</h2>
+
+            <a href="./main.html">
+
+                <button class="btn-back">
+                    &laquo; Назад
+                </button>
+
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Описание</h2>
+
+            <div>
+                Устанавливает форму курсора,
+                когда он находится в пределах элемента.
+                Вид курсора зависит от операционной системы
+                и установленных параметров.
+            </div>
+
+            <br>
+
+            <div>
+                Прежде чем воспользоваться
+                возможностью переделать вид курсора,
+                решите, а будет ли он использоваться к месту.
+                Многих пользователей подобные изменения
+                могут ввести в заблуждение,
+                когда, например,
+                вместо традиционной руки,
+                появляющейся при наведении на ссылку,
+                возникает нечто другое.
+                В большинстве случаев,
+                лучше оставить все как есть.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    cursor:
+                    [url('путь к курсору'),]
+                    [
+                    auto |
+                    crosshair |
+                    default |
+                    e-resize |
+                    help |
+                    move |
+                    n-resize |
+                    ne-resize |
+                    nw-resize |
+                    pointer |
+                    progress |
+                    s-resize |
+                    se-resize |
+                    sw-resize |
+                    text |
+                    w-resize |
+                    wait |
+                    inherit
+                    ]
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Значения</h2>
+
+            <div>
+
+                <div>
+                    <b>url</b><br>
+                    Позволяет установить
+                    свой собственный курсор,
+                    для этого нужно указать путь
+                    к файлу с курсором.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>auto</b><br>
+                    Вид курсора по умолчанию
+                    для текущего элемента.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>inherit</b><br>
+                    Наследует значение родителя.
+                </div>
+
+            </div>
+
+            <br>
+
+            <div>
+                Остальные допустимые значения
+                приведены в таблице.
+            </div>
+
+        </div>
+
+        <table>
+
+            <tr>
+                <th>Значение</th>
+                <th>Тест</th>
+                <th>Пример</th>
+            </tr>
+
+            <tr>
+                <td>default</td>
+                <td class="cur-default">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: default}</td>
+            </tr>
+
+            <tr>
+                <td>crosshair</td>
+                <td class="cur-crosshair">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: crosshair}</td>
+            </tr>
+
+            <tr>
+                <td>help</td>
+                <td class="cur-help">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: help}</td>
+            </tr>
+
+            <tr>
+                <td>move</td>
+                <td class="cur-move">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: move}</td>
+            </tr>
+
+            <tr>
+                <td>pointer</td>
+                <td class="cur-pointer">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: pointer}</td>
+            </tr>
+
+            <tr>
+                <td>progress</td>
+                <td class="cur-progress">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: progress}</td>
+            </tr>
+
+            <tr>
+                <td>text</td>
+                <td class="cur-text">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: text}</td>
+            </tr>
+
+            <tr>
+                <td>wait</td>
+                <td class="cur-wait">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: wait}</td>
+            </tr>
+
+            <tr>
+                <td>n-resize</td>
+                <td class="cur-n">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: n-resize}</td>
+            </tr>
+
+            <tr>
+                <td>ne-resize</td>
+                <td class="cur-ne">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: ne-resize}</td>
+            </tr>
+
+            <tr>
+                <td>e-resize</td>
+                <td class="cur-e">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: e-resize}</td>
+            </tr>
+
+            <tr>
+                <td>se-resize</td>
+                <td class="cur-se">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: se-resize}</td>
+            </tr>
+
+            <tr>
+                <td>s-resize</td>
+                <td class="cur-s">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: s-resize}</td>
+            </tr>
+
+            <tr>
+                <td>sw-resize</td>
+                <td class="cur-sw">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: sw-resize}</td>
+            </tr>
+
+            <tr>
+                <td>w-resize</td>
+                <td class="cur-w">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: w-resize}</td>
+            </tr>
+
+            <tr>
+                <td>nw-resize</td>
+                <td class="cur-nw">
+                    Наведите курсор
+                </td>
+                <td>P {cursor: nw-resize}</td>
+            </tr>
+
+        </table>
+
+        <div class="desc-page">
+
+            <br>
+
+            <div>
+                В зависимости от операционной системы
+                и ее настроек вид курсора
+                может отличаться
+                от приведенных в таблице.
+            </div>
+
+            <br>
+
+            <div>
+                При добавлении курсора из файла
+                синтаксис несколько видоизменится.
+            </div>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    cursor:
+                    url('путь к курсору1'),
+                    url('путь к курсору2'),
+                    ...,
+                    &lt;ключевое слово&gt;
+                </i>
+
+            </div>
+
+            <br>
+
+            <div>
+                Через запятую допускается указывать
+                несколько значений url,
+                в этом случае браузер попытается
+                открыть первый файл с курсором
+                и если это по каким-либо причинам
+                не получится,
+                перейдет к следующему файлу.
+                Список обязательно заканчивается
+                ключевым словом,
+                например,
+                auto или pointer.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 1</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;cursor&lt;/title&gt;
+
+    &lt;style&gt;
+
+        .cross {
+            cursor: crosshair;
+        }
+
+        .help {
+            cursor: help;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="cross"&gt;
+        На этом тексте курсор мыши
+        примет вид перекрёстья.
+    &lt;/div&gt;
+
+    &lt;div&gt;
+
+        &lt;a href="help.html"
+           class="help"&gt;
+           СПРАВКА 1
+        &lt;/a&gt;
+
+        &lt;br&gt;
+
+        &lt;a href="help.html"
+           class="help"&gt;
+           СПРАВКА 2
+        &lt;/a&gt;
+
+        &lt;br&gt;
+
+        &lt;a href="help.html"
+           class="help"&gt;
+           СПРАВКА 3
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат данного примера
+                показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img55.png"
+                 alt="Результат cursor">
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 2</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;cursor&lt;/title&gt;
+
+    &lt;style&gt;
+
+        a {
+            cursor:
+            url(images/sniper.cur),
+            pointer;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div&gt;Обычный текст&lt;/div&gt;
+
+    &lt;div&gt;
+
+        &lt;a href="1.html"&gt;
+            Ссылка 1
+        &lt;/a&gt;
+
+        &lt;a href="2.html"&gt;
+            Ссылка 2
+        &lt;/a&gt;
+
+        &lt;a href="3.html"&gt;
+            Ссылка 3
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+    </section>
+
+</main>
+
+</body>
+</html>

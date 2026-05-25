@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>font</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>font</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Универсальное свойство,
+                которое позволяет одновременно
+                задать несколько характеристик
+                шрифта и текста.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    font:
+                    [font-style || font-variant || font-weight]
+                    font-size [/line-height]
+                    font-family | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                В качестве обязательных значений
+                свойства font
+                указывается размер шрифта
+                и его семейство.
+            </div>
+
+            <br>
+
+            <div>
+                Остальные значения являются
+                необязательными
+                и задаются при желании.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Значения</h2>
+
+            <table>
+
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+
+                <tr>
+                    <td>inherit</td>
+                    <td>
+                        Наследует значение родителя.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>caption</td>
+                    <td>
+                        Шрифт для текста элементов форм.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>icon</td>
+                    <td>
+                        Шрифт для текста под иконками.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>menu</td>
+                    <td>
+                        Шрифт, применяемый в меню.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>message-box</td>
+                    <td>
+                        Шрифт для диалоговых окон.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>small-caption</td>
+                    <td>
+                        Шрифт для небольших элементов управления.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>status-bar</td>
+                    <td>
+                        Шрифт для строки состояния окон.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Примеры использования свойства font:
+            </div>
+
+        </div>
+
+        <div class="code-example">
+
+<pre>
+p {
+
+    font: 12pt/10pt sans-serif;
+}
+</pre>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Размер шрифта задается в пунктах,
+                а через слэш указывается интерлиньяж.
+            </div>
+
+        </div>
+
+        <div class="code-example">
+
+<pre>
+p {
+
+    font: bold italic 110% serif;
+}
+</pre>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Значение bold задает жирное начертание,
+                а italic — курсивное.
+            </div>
+
+        </div>
+
+        <div class="code-example">
+
+<pre>
+p {
+
+    font: normal small-caps 12px/14px fantasy;
+}
+</pre>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Значение small-caps
+                устанавливает текст
+                в виде капители.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;font&lt;/title&gt;
+
+&lt;style&gt;
+
+.layer1 {
+
+    font: 12pt sans-serif;
+}
+
+h1 {
+
+    font: 200% serif;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;div class="layer1"&gt;
+
+&lt;h1&gt;
+Duis te feugifacilisi
+&lt;/h1&gt;
+
+Duis autem dolor in hendrerit
+in vulputate velit esse molestie consequat,
+vel illum dolore eu feugiat nulla facilisis
+at vero eros et accumsan et iusto odio dignissim.
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства
+                font
+                показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img60.png"
+                 alt="Пример font">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

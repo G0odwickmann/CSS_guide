@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>font-family</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>font-family</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает семейство шрифта,
+                которое будет использоваться
+                для оформления текста содержимого.
+            </div>
+
+            <br>
+
+            <div>
+                Список шрифтов может включать
+                одно или несколько названий,
+                разделенных запятой.
+            </div>
+
+            <br>
+
+            <div>
+                Если в имени шрифта содержатся пробелы,
+                название заключается в кавычки.
+            </div>
+
+            <br>
+
+            <div>
+                Когда браузер встречает первый шрифт,
+                он проверяет его наличие
+                на компьютере пользователя.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    font-family:
+                    имя_шрифта
+                    [, имя_шрифта, ...]
+                    | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Значения</h2>
+
+            <table>
+
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+
+                <tr>
+                    <td>serif</td>
+                    <td>
+                        Шрифты с засечками,
+                        например Times.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>sans-serif</td>
+                    <td>
+                        Рубленые шрифты,
+                        например Arial.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>cursive</td>
+                    <td>
+                        Курсивные шрифты.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>fantasy</td>
+                    <td>
+                        Декоративные шрифты.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>monospace</td>
+                    <td>
+                        Моноширинные шрифты.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>inherit</td>
+                    <td>
+                        Наследует значение родителя.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;font-family&lt;/title&gt;
+
+&lt;style&gt;
+
+h1 {
+
+    font-family:
+    Geneva,
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+div {
+
+    font-family:
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;
+Duis te feugifacilisi
+&lt;/h1&gt;
+
+&lt;div&gt;
+
+Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit,
+sed diem nonummy nibh euismod tincidunt
+ut lacreet dolore magna aliquam erat volutpat.
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат данного примера
+                показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img61.png"
+                 alt="Пример font-family">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

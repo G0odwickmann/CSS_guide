@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>font-weight</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>font-weight</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает насыщенность шрифта.
+                Значение устанавливается от 100 до 900 с шагом 100.
+                Сверхсветлое начертание имеет значение 100,
+                а сверхжирное — 900.
+                Нормальное начертание эквивалентно 400,
+                стандартный полужирный текст — значению 700.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    font-weight: bold | bolder | lighter | normal |
+                    100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Значения</h2>
+
+            <div>
+                Насыщенность шрифта задаётся с помощью ключевых слов:
+                <code>bold</code> — полужирное начертание,
+                <code>normal</code> — нормальное начертание.
+            </div>
+
+            <br>
+
+            <div>
+                Допустимо также использовать условные единицы от 100 до 900.
+                Значения <code>bolder</code> и <code>lighter</code>
+                изменяют жирность относительно насыщенности родителя.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;font-weight&lt;/title&gt;
+&lt;style&gt;
+
+h1 {
+    font-weight: normal;
+}
+
+.select {
+    color: maroon;
+    font-weight: 600;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Duis te feugifacilisi&lt;/h1&gt;
+
+&lt;div&gt;
+&lt;span class="select"&gt;
+Lorem ipsum dolor sit amet
+&lt;/span&gt;,
+consectetuer adipiscing elit,
+sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliquam erat volutpat.
+Ut wisis enim ad minim veniam,
+quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат данного примера показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img67.png" alt="Результат font-weight">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

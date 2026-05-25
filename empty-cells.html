@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>empty-cells</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>empty-cells</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Задает отображение границ и фона в ячейке,
+                если она пуста.
+                При использовании border-collapse: collapse
+                свойство empty-cells игнорируется.
+            </div>
+
+            <br>
+
+            <div>
+                Ячейка считается пустой,
+                если:
+            </div>
+
+            <ul>
+                <li>в ней нет символов;</li>
+                <li>содержится только пробел или перевод строки;</li>
+                <li>visibility установлено как hidden.</li>
+            </ul>
+
+            <div>
+                Добавление &amp;nbsp;
+                воспринимается как видимое содержимое.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    empty-cells: show | hide
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Значения</h2>
+
+            <table>
+
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+
+                <tr>
+                    <td>show</td>
+                    <td>
+                        Отображает границу вокруг ячейки и фон в ней.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>hide</td>
+                    <td>
+                        Граница и фон в пустых ячейках не отображаются.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;empty-cells&lt;/title&gt;
+
+&lt;style&gt;
+
+table {
+
+    border: 4px double #399;
+}
+
+td {
+
+    background: #fc0;
+
+    border: 1px solid #333;
+
+    empty-cells: hide;
+
+    padding: 5px;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;table width="100%"&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Леонардо&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Рафаэль&lt;/td&gt;
+&lt;td&gt; &lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Микеланджело&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Донателло&lt;/td&gt;
+&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат данного примера
+                показан на рисунках ниже. (1 картинка - результат кода в Safari, 2 картинка - Internet Explorer 7)
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img57.png"
+                 alt="Safari empty-cells">
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img58.png"
+                 alt="IE7 empty-cells">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

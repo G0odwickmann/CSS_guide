@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <title>counter-increment</title>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+
+            <img src="img/logo.svg"
+                 alt="LOGO"
+                 style="width:165px; height:auto;">
+
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>counter-increment</h2>
+
+            <a href="./main.html">
+
+                <button class="btn-back">
+                    &laquo; Назад
+                </button>
+
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Описание</h2>
+
+            <div>
+                Стилевое свойство
+                <span style="color:#d6336c;">
+                    counter-increment
+                </span>
+                предназначено для увеличения
+                значения счётчика приращений,
+                который задается свойством
+                <span style="color:#d6336c;">
+                    counter-reset
+                </span>.
+            </div>
+
+            <br>
+
+            <div>
+                Такой счётчик подсчитывает
+                количество отображений элементов
+                на странице и может выводиться
+                с помощью свойства
+                <span style="color:#d6336c;">
+                    content
+                </span>
+                и псевдоэлементов
+                <span style="color:#d6336c;">
+                    :after
+                </span>
+                и
+                <span style="color:#d6336c;">
+                    :before
+                </span>.
+                Это позволяет создавать списки
+                (в том числе многоуровневые),
+                в которых нумерация и вид
+                задаются через стили.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    counter-increment:
+                    none | inherit |
+                    идентификатор |
+                    целое число
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Значения</h2>
+
+            <div>
+
+                <div>
+                    <b>none</b><br>
+                    Запрещает увеличение счётчика
+                    для текущего селектора.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>inherit</b><br>
+                    Наследует значение родителя.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>идентификатор</b><br>
+                    Задает одну или несколько
+                    переменных,
+                    для которых требуется
+                    изменить значение счётчика.
+                    Переменные разделяются
+                    между собой пробелом.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>целое число</b><br>
+                    Определяет значение
+                    приращения счётчика.
+                    По умолчанию оно равно 1.
+                    Допускается использовать
+                    отрицательные и нулевые значения.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Возможные сочетания значений
+                свойств
+                <span style="color:#d6336c;">
+                    counter-reset
+                </span>
+                и
+                <span style="color:#d6336c;">
+                    counter-increment
+                </span>
+                показаны в таблице.
+            </div>
+
+        </div>
+
+        <div class="table-page">
+
+            <table>
+
+                <tr>
+
+                    <th>Код</th>
+
+                    <th>Результат</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+<pre>
+LI {
+list-style-type: none;
+}
+
+OL {
+counter-reset: list -1;
+}
+
+LI:before {
+
+counter-increment: list;
+
+content:
+counter(list) ". ";
+}
+</pre>
+                    </td>
+
+                    <td>
+                        Список начинается с нуля.
+                        <br><br>
+                        0, 1, 2
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+<pre>
+LI {
+list-style-type: none;
+}
+
+OL {
+counter-reset: list;
+}
+
+LI:before {
+
+counter-increment: list 2;
+
+content:
+counter(list) ". ";
+}
+</pre>
+                    </td>
+
+                    <td>
+                        Выводятся все четные числа.
+                        <br><br>
+                        2, 4, 6
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+<pre>
+LI {
+list-style-type: none;
+}
+
+OL {
+counter-reset: list -1;
+}
+
+LI:before {
+
+counter-increment:
+list list;
+
+content:
+counter(list) ". ";
+}
+</pre>
+                    </td>
+
+                    <td>
+                        Выводятся все нечетные числа.
+                        <br><br>
+                        1, 3, 5
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+<pre>
+LI {
+list-style-type: none;
+}
+
+OL {
+counter-reset: list 9;
+}
+
+LI:before {
+
+counter-increment: list;
+
+content:
+counter(list) ". ";
+}
+</pre>
+                    </td>
+
+                    <td>
+                        Список начинается с 10.
+                        <br><br>
+                        10, 11, 12
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;
+        counter-increment
+    &lt;/title&gt;
+
+    &lt;style&gt;
+
+        body {
+
+            counter-reset:
+            heading;
+        }
+
+        h2:before {
+
+            counter-increment:
+            heading;
+
+            content:
+            "Глава "
+            counter(heading)
+            ". ";
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h2&gt;
+        Теория ловли льва
+        в пустыне
+    &lt;/h2&gt;
+
+    &lt;h2&gt;
+        Методы инверсной
+        кинематики
+    &lt;/h2&gt;
+
+    &lt;h2&gt;
+        Ловля льва численными
+        методами
+    &lt;/h2&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат данного примера
+                показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img52.png"
+                 alt="Результат counter-increment">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

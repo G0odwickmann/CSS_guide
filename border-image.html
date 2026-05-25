@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>border-image</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>border-image</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Используется для отображения рисованной рамки вокруг элемента.
+                Толщина рамки задаётся свойством border, при этом если указано
+                border: 0, то рамка не выводится. При других значениях border
+                рисунок всегда имеет приоритет. Фон, если он задан через свойство
+                background, отображается под рамкой.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    border-image: none | [ &lt;URL&gt;
+                    [&lt;число&gt; | &lt;проценты&gt;]{1,4}
+                    [/ &lt;толщина&gt;{1,4}]? ] &&
+                    [stretch | repeat | round]{0,2}
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+
+                <p>
+                    <b>none</b><br>
+                    Не отображает рисованную рамку,
+                    используется установленный стиль границы.
+                </p>
+
+                <p>
+                    <b>URL</b><br>
+                    Путь к графическому файлу.
+                    Обязательный параметр.
+                </p>
+
+                <p>
+                    Само изображение для создания рамки
+                    продемонстрировано на рис. 1 и состоит
+                    из девяти областей: четырёх уголков,
+                    верхней, правой, нижней, левой стороны
+                    и центральной части, в которой выводится
+                    содержимое элемента.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img26.png" alt="Схема border-image">
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+
+                <p>
+                    <b>&lt;число&gt;</b><br>
+                    Одно, два, три или четыре значения,
+                    которые указывают размеры частей изображения
+                    в пикселах, задавая тем самым области деления.
+                    Сами единицы не пишутся, только число
+                    (10, а не 10px).
+                    На рис. 2 красными линиями выделены
+                    необходимые для создания рамки области.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img27.png" alt="Разделение border-image">
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Разрешается использовать одно, два, три
+                или четыре значения, разделяя их между
+                собой пробелом. Эффект зависит от
+                количества значений и приведен в таблице.
+            </div>
+
+        </div>
+
+        <table class="border-style-table">
+
+            <tr>
+                <th>Число значений</th>
+                <th>Результат</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    Устанавливает границы одинаковой толщины
+                    на каждой стороне рисунка.
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>
+                    Первое значение устанавливает высоту верхней
+                    и нижней границы, второе — левой и правой.
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>
+                    Первое значение определяет высоту верхней
+                    границы, второе — левой и правой,
+                    а третье — высоту нижней границы.
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>
+                    Поочередно устанавливается размеры верхней,
+                    правой, нижней и левой границы.
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="desc-page">
+
+            <div>
+
+                <p>
+                    <b>&lt;проценты&gt;</b><br>
+                    Аналогично &lt;числу&gt;, но значения
+                    задаются в процентах.
+                    Тот или другой параметр обязателен.
+                </p>
+
+                <p>
+                    <b>&lt;толщина&gt;</b><br>
+                    Через слэш пишется одно, два, три или
+                    четыре значения толщины границы на каждой
+                    стороне элемента. Является аналогом
+                    border-width и использует тот же синтаксис.
+                </p>
+
+                <p>
+                    <b>stretch</b><br>
+                    Растягивает рисунок границы до размеров элемента.
+                    Это значение используется по умолчанию.
+                </p>
+
+                <p>
+                    <b>repeat</b><br>
+                    Повторяет рисунок границы.
+                </p>
+
+                <p>
+                    <b>round</b><br>
+                    Повторяет рисунок и масштабирует его так,
+                    чтобы на стороне элемента оказалось
+                    целое число изображений.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img28.png" alt="Пример border-image">
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;border-image&lt;/title&gt;
+
+    &lt;style&gt;
+
+        div {
+            border: 30px solid #40c4c8;
+            padding: 20px;
+
+            -moz-border-image:
+            url(images/bg-image.png) 30 round round;
+
+            -webkit-border-image:
+            url(images/bg-image.png) 30 round round;
+
+            -o-border-image:
+            url(images/bg-image.png) 30 round round;
+
+            border-image:
+            url(images/bg-image.png) 30 round round;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div&gt;
+        Витраж представляет собой композицию сделанную
+        из множества цветных стекол обрамлённых проволокой
+        и наиболее эффектно смотрится при прохождении
+        через него солнечного или искусственного света.
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства border-image:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img29.png" alt="Результат border-image">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>border-color</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>border-color</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает цвет границы на разных сторонах элемента.
+                Свойство позволяет задать цвет границы сразу для всех
+                сторон элемента или только для указанных.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    border-color: [цвет | transparent] {1,4} | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+    <div>
+
+        <div>
+            <b>transparent</b><br>
+            Устанавливает прозрачный цвет.
+        </div>
+
+        <div>
+            <b>inherit</b><br>
+            Наследует значение родителя.
+        </div>
+
+    </div></br>
+
+</div>
+
+<div class="desc-page">
+
+    <div>
+        <i>Вы можете выбрать любой цвет указав его в RGB
+        или через хэштег (#), или же воспользоваться
+        стандартными цветами из Visual Studio Code
+        (начав прописывать цвет, например black,
+        white, green и тп.)</i>
+    </div>
+
+</div></br>
+
+        <div class="desc-page">
+
+            <div>
+                Разрешается использовать одно, два, три или четыре значения,
+                разделяя их между собой пробелом. Результат зависит от
+                количества и указан в таблице:
+            </div>
+
+        </div>
+
+        <table class="border-style-table">
+
+            <tr>
+                <th>Число значений</th>
+                <th>Результат</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    Цвет границы будет установлен
+                    для всех сторон элемента.
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>
+                    Первое значение устанавливает цвет верхней
+                    и нижней границы, второе — левой и правой.
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>
+                    Первое значение задает цвет верхней границы,
+                    второе — одновременно левой и правой границы,
+                    а третье — нижней границы.
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>
+                    Поочередно устанавливается цвет верхней,
+                    правой, нижней и левой границы.
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;border-color&lt;/title&gt;
+
+    &lt;style&gt;
+
+        h1 {
+            border-color: red white;
+            border-style: solid;
+        }
+
+        p {
+            border-color: #008a77;
+            border-style: solid;
+            padding: 5px;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;Lorem ipsum dolor sit amet&lt;/h1&gt;
+
+    &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed diem nonummy nibh euismod tincidunt ut lacreet dolore
+        magna aliquam erat volutpat.
+    &lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства border-color:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img25.png" alt="Результат border-color">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

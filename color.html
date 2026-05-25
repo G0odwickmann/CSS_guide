@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>color</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>color</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Определяет цвет текста элемента.
+                Для задания цвета могут использоваться
+                шестнадцатеричные значения,
+                RGB, RGBA, HSL, HSLA,
+                а также стандартные имена цветов.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    color: &lt;цвет&gt; | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+
+                <div>
+                    <b>&lt;цвет&gt;</b><br>
+                    Устанавливает цвет текста.
+                    Значение можно задавать
+                    разными способами:
+                    через HEX, RGB,
+                    RGBA, HSL,
+                    а также стандартными
+                    названиями цветов.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>inherit</b><br>
+                    Наследует значение родителя.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Цвет текста наследуется потомками,
+                поэтому если задать цвет для body,
+                он автоматически будет применяться
+                ко многим элементам страницы.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;color&lt;/title&gt;
+
+    &lt;style&gt;
+
+        h1 {
+            color: #E27D60;
+        }
+
+        p {
+            color: rgb(65, 179, 163);
+        }
+
+        span {
+            color: blue;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;
+        Заголовок страницы
+    &lt;/h1&gt;
+
+    &lt;p&gt;
+        Основной текст с цветом,
+        заданным через RGB.
+    &lt;/p&gt;
+
+    &lt;span&gt;
+        Текст синего цвета
+    &lt;/span&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства color:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img34.png" alt="Результат color">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

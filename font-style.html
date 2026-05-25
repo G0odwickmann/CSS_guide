@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>font-style</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>font-style</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Определяет начертание шрифта — обычное, курсивное или наклонное.
+                Когда для текста установлено курсивное или наклонное начертание,
+                браузер обращается к системе для поиска подходящего шрифта.
+                Если заданный шрифт не найден, браузер использует специальный алгоритм
+                для имитации нужного вида текста.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    font-style: normal | italic | oblique | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Значения</h2>
+
+            <table>
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+
+                <tr>
+                    <td><code>normal</code></td>
+                    <td>Обычное начертание текста.</td>
+                </tr>
+
+                <tr>
+                    <td><code>italic</code></td>
+                    <td>Курсивное начертание.</td>
+                </tr>
+
+                <tr>
+                    <td><code>oblique</code></td>
+                    <td>
+                        Наклонное начертание. Курсив и наклонный шрифт при всей их похожести
+                        не одно и то же.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><code>inherit</code></td>
+                    <td>Наследует значение родителя.</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;font-style&lt;/title&gt;
+&lt;style&gt;
+
+h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Duis te feugifacilisi&lt;/h1&gt;
+
+&lt;div&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliquam erat volutpat.
+Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis
+nisl ut aliquip ex ea commodo consequat.
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат данного примера показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img65.png" alt="Результат font-style">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

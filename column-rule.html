@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>column-rule</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>column-rule</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает параметры линии,
+                которая отображается между колонками
+                в многоколоночном тексте.
+                Свойство является сокращённой записью
+                для column-rule-width,
+                column-rule-style
+                и column-rule-color.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    column-rule:
+                    column-rule-width ||
+                    column-rule-style ||
+                    column-rule-color
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+
+                <div>
+                    <b>column-rule-width</b><br>
+                    Определяет толщину линии
+                    между колонками.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>column-rule-style</b><br>
+                    Задает стиль линии:
+                    solid, dashed, dotted,
+                    double и другие.
+                </div>
+
+                <br>
+
+                <div>
+                    <b>column-rule-color</b><br>
+                    Устанавливает цвет линии
+                    между колонками.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Линия отображается строго
+                посередине между колонками
+                и не влияет на ширину текста.
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 1:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;column-rule&lt;/title&gt;
+
+    &lt;style&gt;
+
+        .text {
+            column-count: 3;
+            column-gap: 30px;
+
+            column-rule:
+            3px solid #41B3A3;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="text"&gt;
+
+        Многоколоночный текст можно
+        дополнительно разделять линиями,
+        чтобы визуально отделять
+        одну колонку от другой.
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат первого примера:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img41.png" alt="Результат column-rule">
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример 2:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;column-rule&lt;/title&gt;
+
+    &lt;style&gt;
+
+        .block {
+            column-count: 2;
+            column-gap: 40px;
+
+            column-rule:
+            5px dashed orange;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;div class="block"&gt;
+
+        Свойство column-rule
+        позволяет создавать
+        разные варианты разделителей
+        между колонками текста.
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+    </section>
+
+</main>
+
+</body>
+</html>

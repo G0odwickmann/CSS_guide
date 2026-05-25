@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>letter-spacing</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>letter-spacing</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Описание</h2>
+
+            <div>
+                Определяет интервал между символами в пределах элемента. Браузеры обычно устанавливают расстояние между буквами исходя из типа и вида шрифта, его размеров и настроек операционной системы. Чтобы изменить этот интервал и применяется свойство letter-spacing.
+            </div>
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    letter-spacing: normal | значение | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <h2>Значения</h2>
+
+            <div>
+                В качестве значений принимаются любые единицы длины, принятые в CSS — например, пикселы (px), пункты (pt), em и др. Допускается использование отрицательных значений.
+            </div>
+
+            <br>
+
+            <table>
+                <tr>
+                    <td><b>normal</b></td>
+                    <td>Нормальное расстояние между символами. Значение по умолчанию.</td>
+                </tr>
+                <tr>
+                    <td><b>inherit</b></td>
+                    <td>Наследует значение родителя.</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;letter-spacing&lt;/title&gt;
+    &lt;style&gt;
+
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    p {
+        letter-spacing: 0.2em;
+    }
+
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Заголовок текста&lt;/h1&gt;
+
+&lt;p&gt;
+Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit,
+sed diem nonummy nibh euismod tincidunt
+ut lacreet dolore magna aliquam erat volutpat.
+&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Положительные значения увеличивают расстояние между буквами, а отрицательные — уменьшают.
+            </div>
+
+            <br>
+
+            <div>
+                Свойство удобно применять для оформления заголовков, декоративного текста и улучшения читаемости.
+            </div>
+
+            <br>
+
+            <div>
+                При использовании больших интервалов текст может занимать больше места по ширине.
+            </div>
+
+        </div>
+
+<div class="example-page">
+
+    <h2>Пример:</h2>
+
+    <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;letter-spacing&lt;/title&gt;
+
+&lt;style&gt;
+
+p {
+
+    letter-spacing: 5px;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Duis te feugifacilisi&lt;/h1&gt;
+
+&lt;p&gt;
+
+Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit,
+sed diem nonummy nibh euismod
+tincidunt ut lacreet dolore
+magna aliguam erat volutpat.
+
+Ut wisis enim ad minim veniam,
+quis nostrud exerci tution
+ullamcorper suscipit lobortis
+nisl ut aliquip ex ea commodo consequat.
+
+&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+    </div>
+
+</div>
+
+        <div class="result-image">
+
+            <img src="img/img75.png" alt="Увеличенный интервал между буквами">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

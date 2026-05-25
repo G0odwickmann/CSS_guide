@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>font-size</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>font-size</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Определяет размер шрифта элемента.
+                Размер может быть установлен
+                несколькими способами.
+            </div>
+
+            <br>
+
+            <div>
+                Набор констант:
+                xx-small,
+                x-small,
+                small,
+                medium,
+                large,
+                x-large,
+                xx-large
+                задает абсолютный размер.
+            </div>
+
+            <br>
+
+            <div>
+                Значения larger и smaller
+                задают относительные размеры шрифта.
+            </div>
+
+            <br>
+
+            <div>
+                Размер шрифта зависит
+                от значения свойства font-size
+                у родительского элемента.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img62.png"
+                 alt="Размер шрифта">
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    font-size:
+                    абсолютный_размер |
+                    относительный_размер |
+                    значение |
+                    проценты |
+                    inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Значения</h2>
+
+            <table>
+
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+
+                <tr>
+                    <td>xx-small</td>
+                    <td>
+                        Очень маленький размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>x-small</td>
+                    <td>
+                        Маленький размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>small</td>
+                    <td>
+                        Небольшой размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>medium</td>
+                    <td>
+                        Средний размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>large</td>
+                    <td>
+                        Большой размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>x-large</td>
+                    <td>
+                        Очень большой размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>xx-large</td>
+                    <td>
+                        Максимально большой размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>larger</td>
+                    <td>
+                        Увеличивает размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>smaller</td>
+                    <td>
+                        Уменьшает размер шрифта.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>inherit</td>
+                    <td>
+                        Наследует значение родителя.
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset="utf-8"&gt;
+
+&lt;title&gt;font-size&lt;/title&gt;
+
+&lt;style&gt;
+
+h1 {
+
+    font-family:
+    'Times New Roman',
+    Times,
+    serif;
+
+    font-size: 250%;
+}
+
+div {
+
+    font-family:
+    Verdana,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+    font-size: 11pt;
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;
+Duis te feugifacilisi
+&lt;/h1&gt;
+
+&lt;div&gt;
+
+Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit,
+sed diem nonummy nibh euismod tincidunt
+ut lacreet dolore magna aliquam erat volutpat.
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства
+                font-size
+                показан на рисунке ниже.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img63.png"
+                 alt="Пример font-size">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

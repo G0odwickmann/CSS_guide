@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>border-collapse</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-container">
+
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <aside class="sidebar-page"></aside>
+
+    <section class="content">
+
+        <div class="head-page">
+
+            <h2>border-collapse</h2>
+
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Устанавливает, как отображать границы вокруг ячеек таблицы.
+                Это свойство играет роль, когда для ячеек установлена рамка,
+                тогда в месте стыка ячеек получится линия двойной толщины.
+                Значение <b>collapse</b> заставляет браузер анализировать
+                подобные места в таблице и убирать в ней двойные линии.
+                При этом между ячейками остается только одна граница,
+                одновременно принадлежащая обеим ячейкам.
+                То же правило соблюдается и для внешних границ,
+                когда вокруг самой таблицы добавляется рамка.
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img23.png" alt="Пример border-collapse">
+
+        </div>
+
+        <div class="syntax-page">
+
+            <h2>Синтаксис</h2>
+
+            <div class="syn-txt-page">
+
+                <i>
+                    border-collapse: collapse | separate | inherit
+                </i>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                <p>
+                    <b>collapse</b><br>
+                    Линия между ячейками отображается только одна,
+                    также игнорируется значение атрибута cellspacing.
+                </p>
+
+                <p>
+                    <b>separate</b><br>
+                    Вокруг каждой ячейки отображается своя собственная рамка,
+                    в местах соприкосновения ячеек показываются сразу две линии.
+                </p>
+
+                <p>
+                    <b>inherit</b><br>
+                    Наследует значение родителя.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="example-page">
+
+            <h2>Пример:</h2>
+
+            <div class="code-example">
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;border-collapse&lt;/title&gt;
+
+    &lt;style&gt;
+
+        table {
+            width: 100%;
+            border: 4px double black;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            background: #ccc;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;table&gt;
+
+        &lt;tr&gt;
+            &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+            &lt;th&gt;2013&lt;/th&gt;
+            &lt;th&gt;2014&lt;/th&gt;
+            &lt;th&gt;2015&lt;/th&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Нефть&lt;/td&gt;
+            &lt;td&gt;43&lt;/td&gt;
+            &lt;td&gt;51&lt;/td&gt;
+            &lt;td&gt;79&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Золото&lt;/td&gt;
+            &lt;td&gt;29&lt;/td&gt;
+            &lt;td&gt;34&lt;/td&gt;
+            &lt;td&gt;48&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Дерево&lt;/td&gt;
+            &lt;td&gt;38&lt;/td&gt;
+            &lt;td&gt;57&lt;/td&gt;
+            &lt;td&gt;36&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+            </div>
+
+        </div>
+
+        <div class="desc-page">
+
+            <div>
+                Результат применения свойства border-collapse:
+            </div>
+
+        </div>
+
+        <div class="result-image">
+
+            <img src="img/img24.png" alt="Результат border-collapse">
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
