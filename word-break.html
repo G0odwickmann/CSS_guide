@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>word-break</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>word-break</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Определяет, как должны переноситься слова при достижении края строки. Особенно важно для длинных слов и текстов на языках без пробелов.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>word-break: normal | break-all | keep-all | break-word | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>normal</b> — стандартные правила переноса (по умолчанию).<br><b>break-all</b> — перенос в любом месте слова для латиницы и кириллицы.<br><b>keep-all</b> — запрет переноса для китайского/японского/корейского.<br><b>break-word</b> — перенос только при необходимости.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;word-break&lt;/title&gt;
+&lt;style&gt;
+.box {
+    width: 150px;
+    border: 1px solid #888;
+    padding: 8px;
+    margin: 5px 0;
+    background: #f9f9f9;
+}
+.normal    { word-break: normal; }
+.break-all { word-break: break-all; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="box normal"&gt;normalLongWordWithoutSpaces будет торчать&lt;/div&gt;
+&lt;div class="box break-all"&gt;break-allLongWordWithoutSpaces переносится&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>overflow-y</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>overflow-y</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Управляет отображением содержимого, выходящего за вертикальные пределы блока. Аналог overflow, но только для вертикальной оси.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>overflow-y: visible | hidden | scroll | auto | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>visible</b> — содержимое видно за пределами блока по вертикали.<br><b>hidden</b> — содержимое обрезается снизу.<br><b>scroll</b> — вертикальная полоса прокрутки всегда.<br><b>auto</b> — вертикальная прокрутка при необходимости.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;overflow-y&lt;/title&gt;
+&lt;style&gt;
+.box {
+    overflow-y: auto;
+    height: 80px;
+    width: 250px;
+    border: 1px solid #888;
+    padding: 5px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="box"&gt;
+    Строка 1&lt;br&gt;Строка 2&lt;br&gt;Строка 3&lt;br&gt;
+    Строка 4&lt;br&gt;Строка 5&lt;br&gt;Строка 6&lt;br&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

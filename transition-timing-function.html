@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>transition-timing-function</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>transition-timing-function</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Определяет кривую скорости анимации перехода — насколько быстро или медленно переход происходит в разные моменты.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>transition-timing-function: ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n) | steps(n) | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>ease</b> — медленно начало, быстро середина, медленный конец (по умолчанию).<br><b>linear</b> — постоянная скорость.<br><b>ease-in</b> — медленное начало.<br><b>ease-out</b> — медленный конец.<br><b>ease-in-out</b> — медленное начало и конец.<br><b>cubic-bezier()</b> — произвольная кривая Безье.<br><b>steps(n)</b> — пошаговая анимация.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;transition-timing-function&lt;/title&gt;
+&lt;style&gt;
+.bar {
+    height: 40px;
+    width: 60px;
+    background: #41B3A3;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    transition-property: width;
+    transition-duration: 1s;
+    margin: 6px 0;
+}
+.bar:hover { width: 300px; }
+.ease      { transition-timing-function: ease; }
+.linear    { transition-timing-function: linear; }
+.ease-in   { transition-timing-function: ease-in; }
+.ease-out  { transition-timing-function: ease-out; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="bar ease"&gt;ease&lt;/div&gt;
+&lt;div class="bar linear"&gt;linear&lt;/div&gt;
+&lt;div class="bar ease-in"&gt;ease-in&lt;/div&gt;
+&lt;div class="bar ease-out"&gt;ease-out&lt;/div&gt;
+&lt;p&gt;Наведи на каждый блок для сравнения скоростей&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

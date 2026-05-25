@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>::after</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+
+        <div class="head-page">
+            <h2>::after</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+
+        <div class="desc-page">
+            <div>Псевдоэлемент <b>::after</b> создаёт виртуальный элемент, который вставляется <i>после</i> содержимого выбранного элемента. Используется вместе со свойством <b>content</b> для добавления декоративного или вспомогательного содержимого без изменения HTML.</div>
+        </div>
+
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>селектор::after { content: '...'; свойство: значение; }</i>
+            </div>
+        </div>
+
+
+        <div class="example-page">
+            <h2>Пример 1:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;::after&lt;/title&gt;
+    &lt;style&gt;
+        .required::after {
+            content: ' *';
+            color: #E27D60;
+            font-weight: bold;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;label class="required"&gt;Имя&lt;/label&gt;&lt;br&gt;
+    &lt;label class="required"&gt;Email&lt;/label&gt;&lt;br&gt;
+    &lt;label&gt;Телефон&lt;/label&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div class="example-page">
+            <h2>Пример 2:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;::after — кавычки&lt;/title&gt;
+    &lt;style&gt;
+        blockquote::before {
+            content: '«';
+            font-size: 2em;
+            color: #41B3A3;
+        }
+        blockquote::after {
+            content: '»';
+            font-size: 2em;
+            color: #41B3A3;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;blockquote&gt;Красота спасёт мир&lt;/blockquote&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>

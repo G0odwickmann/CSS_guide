@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>list-style-position</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>list-style-position</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Определяет, как маркер списка располагается относительно содержимого элемента &lt;li&gt; — внутри блока или снаружи.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>list-style-position: inside | outside | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>outside</b> — маркер находится за пределами блока содержимого (по умолчанию).<br><b>inside</b> — маркер является частью блока содержимого, текст обтекает его.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;list-style-position&lt;/title&gt;
+&lt;style&gt;
+.outside {
+    list-style-position: outside;
+    background: #e8f4f8;
+    padding: 10px 30px;
+}
+.inside {
+    list-style-position: inside;
+    background: #f4e8f8;
+    padding: 10px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;outside:&lt;/p&gt;
+&lt;ul class="outside"&gt;
+    &lt;li&gt;Длинный текст пункта списка для демонстрации переноса&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;inside:&lt;/p&gt;
+&lt;ul class="inside"&gt;
+    &lt;li&gt;Длинный текст пункта списка для демонстрации переноса&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

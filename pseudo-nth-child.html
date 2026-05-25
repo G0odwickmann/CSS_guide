@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>:nth-child()</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+
+        <div class="head-page">
+            <h2>:nth-child()</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+
+        <div class="desc-page">
+            <div>Псевдокласс <b>:nth-child()</b> выбирает дочерние элементы по их порядковому номеру. Принимает аргумент в виде числа, ключевых слов <b>odd</b>/<b>even</b> или формулы <b>an+b</b>.</div>
+        </div>
+
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>селектор:nth-child(n) { свойство: значение; }</i>
+            </div>
+        </div>
+
+        <div class="desc-page">
+            <div>
+                <div><b>odd</b><br>Выбирает нечётные дочерние элементы (1-й, 3-й, 5-й…).</div><br>
+                <div><b>even</b><br>Выбирает чётные дочерние элементы (2-й, 4-й, 6-й…).</div><br>
+                <div><b>an+b</b><br>Формула: a — шаг, b — смещение. Например, 2n+1 = odd, 3n = каждый третий.</div><br>
+            </div>
+        </div>
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;:nth-child&lt;/title&gt;
+    &lt;style&gt;
+        tr:nth-child(even) {
+            background-color: #e8faf8;
+        }
+        li:nth-child(3n) {
+            color: #E27D60;
+            font-weight: bold;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table border="1"&gt;
+        &lt;tr&gt;&lt;td&gt;Строка 1&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Строка 2&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Строка 3&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Строка 4&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>

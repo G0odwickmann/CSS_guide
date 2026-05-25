@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>margin</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>margin</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Устанавливает внешние отступы элемента — пространство между его границей и соседними элементами. Можно задать одно, два, три или четыре значения для разных сторон.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>margin: значение | проценты | auto | inherit
+margin: верх право низ лево</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>auto</b> — браузер вычисляет отступ автоматически (используется для горизонтального центрирования).<br><b>значение</b> — числовое значение с единицами измерения (px, em, rem, % и др.).<br>Одно значение задаёт отступ со всех сторон. Два значения: верх/низ и право/лево. Три: верх, право/лево, низ. Четыре: верх, право, низ, лево.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;margin&lt;/title&gt;
+&lt;style&gt;
+.box {
+    background: #AED9E0;
+    border: 2px solid #5E9EA0;
+    padding: 10px;
+    margin: 20px 40px;
+    width: 200px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="box"&gt;Блок с отступами 20px сверху/снизу и 40px справа/слева&lt;/div&gt;
+&lt;div class="box"&gt;Второй блок&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div class="example-page second-example">
+            <h2>Пример 2:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;margin auto&lt;/title&gt;
+&lt;style&gt;
+.centered {
+    width: 300px;
+    margin: 0 auto;
+    background: #FFD700;
+    padding: 15px;
+    text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="centered"&gt;Блок по центру страницы&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

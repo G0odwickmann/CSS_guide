@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>:nth-last-child()</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+
+        <div class="head-page">
+            <h2>:nth-last-child()</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+
+        <div class="desc-page">
+            <div>Псевдокласс <b>:nth-last-child()</b> работает аналогично <b>:nth-child()</b>, но отсчёт ведётся с конца, то есть от последнего дочернего элемента.</div>
+        </div>
+
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>селектор:nth-last-child(n) { свойство: значение; }</i>
+            </div>
+        </div>
+
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;:nth-last-child&lt;/title&gt;
+    &lt;style&gt;
+        li:nth-last-child(1) {
+            color: #E27D60;
+            font-weight: bold;
+        }
+        li:nth-last-child(2) {
+            color: #41B3A3;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Пункт 1&lt;/li&gt;
+        &lt;li&gt;Пункт 2&lt;/li&gt;
+        &lt;li&gt;Пункт 3 (предпоследний)&lt;/li&gt;
+        &lt;li&gt;Пункт 4 (последний)&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>

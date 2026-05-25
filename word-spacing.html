@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>word-spacing</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>word-spacing</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Задаёт дополнительное расстояние между словами в тексте. Значения могут быть положительными и отрицательными.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>word-spacing: normal | значение | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>normal</b> — стандартные межсловные пробелы (по умолчанию).<br><b>значение</b> — дополнительное расстояние (px, em). Отрицательные значения уменьшают расстояние.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;word-spacing&lt;/title&gt;
+&lt;style&gt;
+.wide    { word-spacing: 15px; background: #e8f4f8; padding: 5px; margin: 5px 0; }
+.narrow  { word-spacing: -3px; background: #f8e8e8; padding: 5px; margin: 5px 0; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p class="wide"&gt;Слова с большим расстоянием между ними&lt;/p&gt;
+&lt;p class="narrow"&gt;Слова с уменьшенным расстоянием&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

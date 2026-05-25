@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>z-index</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>z-index</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Задаёт порядок наложения позиционированных элементов по оси Z. Элемент с большим z-index отображается поверх элементов с меньшим значением.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>z-index: auto | целое_число | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>auto</b> — элемент имеет тот же порядок наложения, что и родитель (по умолчанию).<br><b>целое_число</b> — явный порядок (может быть отрицательным). Работает только для позиционированных элементов (position != static).</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;z-index&lt;/title&gt;
+&lt;style&gt;
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+.box1 { background: rgba(231,76,60,0.8);  z-index: 1; top: 20px; left: 20px; }
+.box2 { background: rgba(52,152,219,0.8); z-index: 2; top: 50px; left: 50px; }
+.box3 { background: rgba(46,204,113,0.8); z-index: 3; top: 80px; left: 80px; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="position:relative; height:200px;"&gt;
+    &lt;div class="box box1"&gt;z:1&lt;/div&gt;
+    &lt;div class="box box2"&gt;z:2&lt;/div&gt;
+    &lt;div class="box box3"&gt;z:3&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div class="example-page second-example">
+            <h2>Пример 2:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;z-index модальное окно&lt;/title&gt;
+&lt;style&gt;
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.modal {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    z-index: 101;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Обычный текст страницы&lt;/p&gt;
+&lt;div class="overlay"&gt;&lt;/div&gt;
+&lt;div class="modal"&gt;Модальное окно поверх всего&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

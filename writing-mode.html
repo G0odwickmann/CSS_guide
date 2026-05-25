@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>writing-mode</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>writing-mode</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Определяет направление текста: горизонтальное или вертикальное. Используется для поддержки языков с вертикальной письменностью, а также для декоративных эффектов.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>writing-mode: horizontal-tb | vertical-rl | vertical-lr | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>horizontal-tb</b> — горизонтальный текст сверху вниз (по умолчанию).<br><b>vertical-rl</b> — вертикальный текст справа налево.<br><b>vertical-lr</b> — вертикальный текст слева направо.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;writing-mode&lt;/title&gt;
+&lt;style&gt;
+.horizontal { writing-mode: horizontal-tb; background: #e8f4f8; padding: 10px; display: inline-block; margin: 10px; }
+.vertical   { writing-mode: vertical-rl;   background: #e8f8e8; padding: 10px; display: inline-block; margin: 10px; height: 100px; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="horizontal"&gt;Горизонтальный текст&lt;/div&gt;
+&lt;div class="vertical"&gt;Вертикальный текст&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>position</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>position</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Определяет способ позиционирования элемента в документе. От значения этого свойства зависит поведение свойств top, right, bottom и left.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>position: static | relative | absolute | fixed | sticky | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>static</b> — нормальный поток документа (по умолчанию).<br><b>relative</b> — смещение относительно нормального положения.<br><b>absolute</b> — позиционирование относительно ближайшего предка с position != static.<br><b>fixed</b> — позиционирование относительно окна браузера, не прокручивается.<br><b>sticky</b> — комбинация relative и fixed в зависимости от прокрутки.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;position&lt;/title&gt;
+&lt;style&gt;
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background: #aed6f1;
+    padding: 10px;
+    display: inline-block;
+}
+.static-box {
+    background: #a9dfbf;
+    padding: 10px;
+    display: inline-block;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="static-box"&gt;static (обычный поток)&lt;/div&gt;
+&lt;div class="relative-box"&gt;relative: смещён на top:20px, left:30px&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div class="example-page second-example">
+            <h2>Пример 2:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;position absolute&lt;/title&gt;
+&lt;style&gt;
+.parent {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    background: #fdebd0;
+    border: 2px solid #e59866;
+}
+.child {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #e59866;
+    color: white;
+    padding: 5px 10px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="parent"&gt;
+    Родитель (relative)
+    &lt;div class="child"&gt;Дочерний (absolute)&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

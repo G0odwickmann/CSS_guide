@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>transform</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>transform</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Применяет к элементу двух- или трёхмерные преобразования: поворот, масштабирование, наклон или перемещение. Не влияет на положение соседних элементов.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>transform: функция(значение) [функция(значение)]* | none | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>translate(x, y)</b> — перемещение.<br><b>rotate(угол)</b> — поворот.<br><b>scale(x, y)</b> — масштабирование.<br><b>skew(x, y)</b> — наклон.<br><b>matrix()</b> — матрица преобразований.<br><b>none</b> — без преобразований.</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;transform&lt;/title&gt;
+&lt;style&gt;
+.box {
+    width: 80px;
+    height: 80px;
+    background: #41B3A3;
+    display: inline-block;
+    margin: 30px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+.rotate  { transform: rotate(30deg); }
+.scale   { transform: scale(1.5); }
+.skew    { transform: skew(20deg, 10deg); }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="box rotate"&gt;rotate&lt;/div&gt;
+&lt;div class="box scale"&gt;scale&lt;/div&gt;
+&lt;div class="box skew"&gt;skew&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div class="example-page second-example">
+            <h2>Пример 2:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;transform translate&lt;/title&gt;
+&lt;style&gt;
+.moved {
+    width: 100px;
+    height: 100px;
+    background: #e27d60;
+    transform: translate(50px, 20px);
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="moved"&gt;translate&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

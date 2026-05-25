@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>text-shadow</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+        <div class="head-page">
+            <h2>text-shadow</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+        <div class="desc-page">
+            <div>Добавляет тень к тексту. Можно задать несколько теней через запятую. Тени накладываются поверх текста в порядке перечисления.</div>
+        </div>
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>text-shadow: сдвиг-x сдвиг-y [размытие] [цвет] [, ...] | none | inherit</i>
+            </div>
+        </div>
+        <div class="desc-page">
+            <h2>Значения</h2>
+            <div><b>сдвиг-x</b> — горизонтальное смещение тени.<br><b>сдвиг-y</b> — вертикальное смещение тени.<br><b>размытие</b> — радиус размытия (необязательно).<br><b>цвет</b> — цвет тени (необязательно).</div>
+        </div>
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;text-shadow&lt;/title&gt;
+&lt;style&gt;
+h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    font-size: 36px;
+}
+h2 {
+    text-shadow: 3px 3px 0 #41B3A3, -1px -1px 0 #E27D60;
+    font-size: 30px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Тень с размытием&lt;/h1&gt;
+&lt;h2&gt;Две тени сразу&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

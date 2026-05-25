@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>calc()</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+
+        <div class="head-page">
+            <h2>calc()</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+
+        <div class="desc-page">
+            <div>CSS-функция <b>calc()</b> позволяет выполнять математические вычисления при задании значений CSS-свойств. Поддерживает операции сложения (<b>+</b>), вычитания (<b>-</b>), умножения (<b>*</b>) и деления (<b>/</b>). Особенно удобна при смешивании единиц измерения (например, <b>px</b> и <b>%</b>).</div>
+        </div>
+
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>свойство: calc(выражение);</i>
+            </div>
+        </div>
+
+
+        <div class="example-page">
+            <h2>Пример 1:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;calc()&lt;/title&gt;
+    &lt;style&gt;
+        .sidebar {
+            width: 250px;
+            background-color: #41B3A3;
+            padding: 10px;
+        }
+        .main-content {
+            width: calc(100% - 270px);
+            margin-left: 270px;
+            padding: 10px;
+            background-color: #e8faf8;
+        }
+        body { margin: 0; }
+        .layout { display: flex; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="layout"&gt;
+        &lt;div class="sidebar"&gt;Боковая панель (250px)&lt;/div&gt;
+        &lt;div class="main-content"&gt;Основное содержимое (100% - 270px)&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+        <div class="example-page">
+            <h2>Пример 2:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;calc() — шрифт&lt;/title&gt;
+    &lt;style&gt;
+        h1 {
+            font-size: calc(1rem + 2vw);
+            color: #41B3A3;
+        }
+        .box {
+            width: calc(50% - 20px);
+            margin: 10px;
+            padding: calc(10px + 1%);
+            background-color: #f9d5d5;
+            display: inline-block;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Адаптивный заголовок&lt;/h1&gt;
+    &lt;div class="box"&gt;Блок 1&lt;/div&gt;
+    &lt;div class="box"&gt;Блок 2&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>

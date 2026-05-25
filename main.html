@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Наковальня CSS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="./index.html"><img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;"></a>
+        </div>
+    </header>
+
+    <div class="search-block">
+
+    <div class="search-text-block">
+        <p>нет времени искать нужное свойство?</p>
+        <p>Введите его в нашей поисковой строке по сайту</p>
+    </div>
+
+    <img src="img/Arrow.svg" alt="Стрелка" class="arrow-icon">
+
+    <div class="search-wrapper">
+
+        <input 
+            type="search"
+            id="searchInput"
+            placeholder="Поиск по сайту"
+            class="search-field"
+            autocomplete="off"
+        >
+
+        <div id="searchResults" class="search-results"></div>
+
+    </div>
+
+</div>
+
+    <main class="container">
+
+    <aside class="sidebar">
+        <div class="nav-items">
+            <div class="nav-item">
+                <a href="./kak_polizovatsya_spravochnikom.html">Как пользоваться данным справочником?</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="./hlebnye_kroshki.html">Хлебные крошки</a>
+            </div>
+        </div>
+        
+    </aside>
+
+    <section class="content">
+
+        <div class="letter-section">
+            <h2>!</h2>
+            <ul>
+                <li><a href="./important.html">!important</a></li>
+            </ul>
+        </div>
+
+        <section class="letter-section">
+            <h2>B</h2>
+
+            <div class="properties-list">
+
+                <div class="column">
+                    <ul>
+                        <li><a href="./background.html">background</a></li>
+                        <li><a href="./background-attachment.html">background-attachment</a></li>
+                        <li><a href="./background-clip.html">background-clip</a></li>
+                        <li><a href="./background-color.html">background-color</a></li>
+                        <li><a href="./background-image.html">background-image</a></li>
+                        <li><a href="./background-origin.html">background-origin</a></li>
+                        <li><a href="./background-position.html">background-position</a></li>
+                        <li><a href="./background-repeat.html">background-repeat</a></li>
+                        <li><a href="./background-size.html">background-size</a></li>
+                        <li><a href="./border.html">border</a></li>
+                        <li><a href="./border-radius.html">border-radius</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul>
+                        <li><a href="./border-spacing.html">border-spacing</a></li>
+                        <li><a href="./border-style.html">border-style</a></li>
+                        <li><a href="./bottom.html">bottom</a></li>
+                        <li><a href="./box-shadow.html">box-shadow</a></li>
+                        <li><a href="./box-sizing.html">box-sizing</a></li>
+                        <li><a href="./border-collapse.html">border-collapse</a></li>
+                        <li><a href="./border-color.html">border-color</a></li>
+                        <li><a href="./border-image.html">border-image</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <div class="properties-list">
+
+                <div class="column">
+                    <h2>C</h2>
+                    <ul>
+                        <li><a href="./caption-side.html">caption-side</a></li>
+                        <li><a href="./clear.html">clear</a></li>
+                        <li><a href="./clip.html">clip</a></li>
+                        <li><a href="./color.html">color</a></li>
+                        <li><a href="./column-count.html">column-count</a></li>
+                        <li><a href="./colunm-gap.html">column-gap</a></li>
+                        <li><a href="./colunm-gap.html">column-rule</a></li>
+                        <li><a href="./column-width.html">column-width</a></li>
+                        <li><a href="./columns.html">columns</a></li>
+                        <li><a href="./content.html">content</a></li>
+                        <li><a href="./counter-increment.html">counter-increment</a></li>
+                        <li><a href="./counter-reset.html">counter-reset</a></li>
+                        <li><a href="./cursor.html">cursor</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>D</h2>
+                    <ul>
+                        <li><a href="./direction.html">direction</a></li>
+                        <li><a href="./display.html">display</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>E</h2>
+                    <ul>
+                        <li><a href="./empty-cells.html">empty-cells</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>F</h2>
+                    <ul>
+                        <li><a href="./float.html">float</a></li>
+                        <li><a href="./font.html">font</a></li>
+                        <li><a href="./font-family.html">font-family</a></li>
+                        <li><a href="./font-size.html">font-size</a></li>
+                        <li><a href="./font-stretch.html">font-stretch</a></li>
+                        <li><a href="./font-style.html">font-style</a></li>
+                        <li><a href="./font-variant.html">font-variant</a></li>
+                        <li><a href="./font-weight.html">font-weight</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <div class="properties-list">
+
+                <div class="column">
+                    <h2>H</h2>
+                    <ul>
+                        <li><a href="./height.html">height</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>L</h2>
+                    <ul>
+                        <li><a href="./left.html">left</a></li>
+                        <li><a href="./letter-spacing.html">letter-spacing</a></li>
+                        <li><a href="./line-height.html">line-height</a></li>
+                        <li><a href="./list-style.html">list-style</a></li>
+                        <li><a href="./list-style-image.html">list-style-image</a></li>
+                        <li><a href="./list-style-position.html">list-style-position</a></li>
+                        <li><a href="./list-style-type.html">list-style-type</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>M</h2>
+                    <ul>
+                        <li><a href="./margin.html">margin</a></li>
+                        <li><a href="./max-height.html">max-height</a></li>
+                        <li><a href="./max-width.html">max-width</a></li>
+                        <li><a href="./min-height.html">min-height</a></li>
+                        <li><a href="./min-width.html">min-width</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>O</h2>
+                    <ul>
+                        <li><a href="./opacity.html">opacity</a></li>
+                        <li><a href="./orphans.html">orphans</a></li>
+                        <li><a href="./outline.html">outline</a></li>
+                        <li><a href="./outline-color.html">outline-color</a></li>
+                        <li><a href="./outline-offset.html">outline-offset</a></li>
+                        <li><a href="./outline-style.html">outline-style</a></li>
+                        <li><a href="./outline-width.html">outline-width</a></li>
+                        <li><a href="./overflow.html">overflow</a></li>
+                        <li><a href="./overflow-x.html">overflow-x</a></li>
+                        <li><a href="./overflow-y.html">overflow-y</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>P</h2>
+                    <ul>
+                        <li><a href="./padding.html">padding</a></li>
+                        <li><a href="./padding-bottom.html">padding-bottom</a></li>
+                        <li><a href="./padding-left.html">padding-left</a></li>
+                        <li><a href="./padding-right.html">padding-right</a></li>
+                        <li><a href="./padding-top.html">padding-top</a></li>
+                        <li><a href="./page-break-after.html">page-break-after</a></li>
+                        <li><a href="./page-break-before.html">page-break-before</a></li>
+                        <li><a href="./page-break-inside.html">page-break-inside</a></li>
+                        <li><a href="./position.html">position</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <div class="properties-list">
+
+                <div class="column">
+                    <h2>Q</h2>
+                    <ul>
+                        <li><a href="./quotes.html">quotes</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>R</h2>
+                    <ul>
+                        <li><a href="./resize.html">resize</a></li>
+                        <li><a href="./right.html">right</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>T</h2>
+                    <ul>
+                        <li><a href="./tab-size.html">tab-size</a></li>
+                        <li><a href="./table-layout.html">table-layout</a></li>
+                        <li><a href="./text-align.html">text-align</a></li>
+                        <li><a href="./text-align-last.html">text-align-last</a></li>
+                        <li><a href="./text-decoration.html">text-decoration</a></li>
+                        <li><a href="./text-decoration-color.html">text-decoration-color</a></li>
+                        <li><a href="./text-decoration-line.html">text-decoration-line</a></li>
+                        <li><a href="./text-decoration-style.html">text-decoration-style</a></li>
+                        <li><a href="./text-indent.html">text-indent</a></li>
+                        <li><a href="./text-overflow.html">text-overflow</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul>
+                        <li><a href="./text-shadow.html">text-shadow</a></li>
+                        <li><a href="./text-transform.html">text-transform</a></li>
+                        <li><a href="./top.html">top</a></li>
+                        <li><a href="./transform.html">transform</a></li>
+                        <li><a href="./transform-origin.html">transform-origin</a></li>
+                        <li><a href="./transition.html">transition</a></li>
+                        <li><a href="./transition-delay.html">transition-delay</a></li>
+                        <li><a href="./transition-duration.html">transition-duration</a></li>
+                        <li><a href="./transition-property.html">transition-property</a></li>
+                        <li><a href="./transition-timing-function.html">transition-timing-function</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>U</h2>
+                    <ul>
+                        <li><a href="./unicode-bidi.html">unicode-bidi</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <div class="properties-list">
+
+                <div class="column">
+                    <h2>V</h2>
+                    <ul>
+                        <li><a href="./vertical-align.html">vertical-align</a></li>
+                        <li><a href="./visibility.html">visibility</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>W</h2>
+                    <ul>
+                        <li><a href="./white-space.html">white-space</a></li>
+                        <li><a href="./widows.html">widows</a></li>
+                        <li><a href="./width.html">width</a></li>
+                        <li><a href="./word-break.html">word-break</a></li>
+                        <li><a href="./word-spacing.html">word-spacing</a></li>
+                        <li><a href="./word-wrap.html">word-wrap</a></li>
+                        <li><a href="./writing-mode.html">writing-mode</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h2>Z</h2>
+                    <ul>
+                        <li><a href="./z-index.html">z-index</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="psevdoklassy">
+    <h3>Псевдоклассы</h3>
+
+    <div class="properties-list">
+
+        <div class="column">
+            <ul>
+                <li><a href="./pseudo-active.html">:active</a></li>
+                <li><a href="./pseudo-checked.html">:checked</a></li>
+                <li><a href="./pseudo-default.html">:default</a></li>
+                <li><a href="./pseudo-disabled.html">:disabled</a></li>
+                <li><a href="./pseudo-empty.html">:empty</a></li>
+                <li><a href="./pseudo-enabled.html">:enabled</a></li>
+                <li><a href="./pseudo-first-child.html">:first-child</a></li>
+                <li><a href="./pseudo-first-letter.html">:first-letter</a></li>
+                <li><a href="./pseudo-first-line.html">:first-line</a></li>
+                <li><a href="./pseudo-first-of-type.html">:first-of-type</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li><a href="./pseudo-focus.html">:focus</a></li>
+                <li><a href="./pseudo-hover.html">:hover</a></li>
+                <li><a href="./pseudo-indeterminate.html">:indeterminate</a></li>
+                <li><a href="./pseudo-invalid.html">:invalid</a></li>
+                <li><a href="./pseudo-lang.html">:lang</a></li>
+                <li><a href="./pseudo-last-child.html">:last-child</a></li>
+                <li><a href="./pseudo-last-of-type.html">:last-of-type</a></li>
+                <li><a href="./pseudo-link.html">:link</a></li>
+                <li><a href="./pseudo-not.html">:not</a></li>
+                <li><a href="./pseudo-nth-child.html">:nth-child</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li><a href="./pseudo-nth-last-child.html">:nth-last-child</a></li>
+                <li><a href="./pseudo-nth-last-of-type.html">:nth-last-of-type</a></li>
+                <li><a href="./pseudo-nth-of-type.html">:nth-of-type</a></li>
+                <li><a href="./pseudo-only-child.html">:only-child</a></li>
+                <li><a href="./pseudo-only-of-type.html">:only-of-type</a></li>
+                <li><a href="./pseudo-optional.html">:optional</a></li>
+                <li><a href="./pseudo-read-only.html">:read-only</a></li>
+                <li><a href="./pseudo-read-write.html">:read-write</a></li>
+                <li><a href="./pseudo-required.html">:required</a></li>
+                <li><a href="./pseudo-root.html">:root</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li><a href="./pseudo-target.html">:target</a></li>
+                <li><a href="./pseudo-valid.html">:valid</a></li>
+                <li><a href="./pseudo-visited.html">:visited</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="psevdoelementy">
+    <h3>Псевдоэлементы</h3>
+
+    <ul>
+        <li><a href="./pseudo-after.html">::after (after)</a></li>
+        <li><a href="./pseudo-before.html">::before (before)</a></li>
+        <li><a href="./pseudo-first-letter.html">::first-letter</a></li>
+        <li><a href="./pseudo-first-line.html">::first-line</a></li>
+        <li><a href="./pseudo-selection.html">::selection</a></li>
+    </ul>
+</div>
+
+<div class="funktsii">
+    <h3>Функции</h3>
+
+    <ul>
+        <li><a href="./func-attr.html">attr()</a></li>
+        <li><a href="./func-calc.html">calc()</a></li>
+    </ul>
+</div>
+
+    </section>
+
+</main>
+
+<footer class="footer" style="background: #41B3A3; color: #f2c6bf; text-align: center; padding: 15px 0;">
+  © Данный сайт сделан студентом группы П-11 Гадальшиной Анастасией 2026
+</footer>
+
+<!--Скрипт для поисковой строки-->
+
+<script>
+
+const properties = [
+    { name: "!important", link: "./important.html" },
+    { name: "background", link: "./background.html" },
+    { name: "background-attachment", link: "./background-attachment.html" },
+    { name: "background-clip", link: "./background-clip.html" },
+    { name: "background-color", link: "./background-color.html" },
+    { name: "background-image", link: "./background-image.html" },
+    { name: "background-origin", link: "./background-origin.html" },
+    { name: "background-position", link: "./background-position.html" },
+    { name: "background-repeat", link: "./background-repeat.html" },
+    { name: "background-size", link: "./background-size.html" },
+    { name: "border", link: "./border.html" },
+    { name: "border-collapse", link: "./border-collapse.html" },
+    { name: "border-color", link: "./border-color.html" },
+    { name: "border-image", link: "./border-image.html" },
+    { name: "border-radius", link: "./border-radius.html" },
+    { name: "border-spacing", link: "./border-spacing.html" },
+    { name: "border-style", link: "./border-style.html" },
+    { name: "bottom", link: "./bottom.html" },
+    { name: "box-shadow", link: "./box-shadow.html" },
+    { name: "box-sizing", link: "./box-sizing.html" },
+    { name: "caption-side", link: "./caption-side.html" },
+    { name: "clear", link: "./clear.html" },
+    { name: "clip", link: "./clip.html" },
+    { name: "color", link: "./color.html" },
+    { name: "column-count", link: "./column-count.html" },
+    { name: "column-gap", link: "./colunm-gap.html" },
+    { name: "column-rule", link: "./column-rule.html" },
+    { name: "column-width", link: "./column-width.html" },
+    { name: "columns", link: "./columns.html" },
+    { name: "content", link: "./content.html" },
+    { name: "counter-increment", link: "./counter-increment.html" },
+    { name: "counter-reset", link: "./counter-reset.html" },
+    { name: "cursor", link: "./cursor.html" },
+    { name: "direction", link: "./direction.html" },
+    { name: "display", link: "./display.html" },
+    { name: "empty-cells", link: "./empty-cells.html" },
+    { name: "float", link: "./float.html" },
+    { name: "font", link: "./font.html" },
+    { name: "font-family", link: "./font-family.html" },
+    { name: "font-size", link: "./font-size.html" },
+    { name: "font-stretch", link: "./font-stretch.html" },
+    { name: "font-style", link: "./font-style.html" },
+    { name: "font-variant", link: "./font-variant.html" },
+    { name: "font-weight", link: "./font-weight.html" },
+    { name: "height", link: "./height.html" },
+    { name: "left", link: "./left.html" },
+    { name: "letter-spacing", link: "./letter-spacing.html" },
+    { name: "line-height", link: "./line-height.html" },
+    { name: "list-style", link: "./list-style.html" },
+    { name: "list-style-image", link: "./list-style-image.html" },
+    { name: "list-style-position", link: "./list-style-position.html" },
+    { name: "list-style-type", link: "./list-style-type.html" },
+    { name: "margin", link: "./margin.html" },
+    { name: "max-height", link: "./max-height.html" },
+    { name: "max-width", link: "./max-width.html" },
+    { name: "min-height", link: "./min-height.html" },
+    { name: "min-width", link: "./min-width.html" },
+    { name: "opacity", link: "./opacity.html" },
+    { name: "orphans", link: "./orphans.html" },
+    { name: "outline", link: "./outline.html" },
+    { name: "outline-color", link: "./outline-color.html" },
+    { name: "outline-offset", link: "./outline-offset.html" },
+    { name: "outline-style", link: "./outline-style.html" },
+    { name: "outline-width", link: "./outline-width.html" },
+    { name: "overflow", link: "./overflow.html" },
+    { name: "overflow-x", link: "./overflow-x.html" },
+    { name: "overflow-y", link: "./overflow-y.html" },
+    { name: "padding", link: "./padding.html" },
+    { name: "padding-bottom", link: "./padding-bottom.html" },
+    { name: "padding-left", link: "./padding-left.html" },
+    { name: "padding-right", link: "./padding-right.html" },
+    { name: "padding-top", link: "./padding-top.html" },
+    { name: "page-break-after", link: "./page-break-after.html" },
+    { name: "page-break-before", link: "./page-break-before.html" },
+    { name: "page-break-inside", link: "./page-break-inside.html" },
+    { name: "position", link: "./position.html" },
+    { name: "quotes", link: "./quotes.html" },
+    { name: "resize", link: "./resize.html" },
+    { name: "right", link: "./right.html" },
+    { name: "tab-size", link: "./tab-size.html" },
+    { name: "table-layout", link: "./table-layout.html" },
+    { name: "text-align", link: "./text-align.html" },
+    { name: "text-align-last", link: "./text-align-last.html" },
+    { name: "text-decoration", link: "./text-decoration.html" },
+    { name: "text-decoration-color", link: "./text-decoration-color.html" },
+    { name: "text-decoration-line", link: "./text-decoration-line.html" },
+    { name: "text-decoration-style", link: "./text-decoration-style.html" },
+    { name: "text-indent", link: "./text-indent.html" },
+    { name: "text-overflow", link: "./text-overflow.html" },
+    { name: "text-shadow", link: "./text-shadow.html" },
+    { name: "text-transform", link: "./text-transform.html" },
+    { name: "top", link: "./top.html" },
+    { name: "transform", link: "./transform.html" },
+    { name: "transform-origin", link: "./transform-origin.html" },
+    { name: "transition", link: "./transition.html" },
+    { name: "transition-delay", link: "./transition-delay.html" },
+    { name: "transition-duration", link: "./transition-duration.html" },
+    { name: "transition-property", link: "./transition-property.html" },
+    { name: "transition-timing-function", link: "./transition-timing-function.html" },
+    { name: "unicode-bidi", link: "./unicode-bidi.html" },
+    { name: "vertical-align", link: "./vertical-align.html" },
+    { name: "visibility", link: "./visibility.html" },
+    { name: "white-space", link: "./white-space.html" },
+    { name: "widows", link: "./widows.html" },
+    { name: "width", link: "./width.html" },
+    { name: "word-break", link: "./word-break.html" },
+    { name: "word-spacing", link: "./word-spacing.html" },
+    { name: "word-wrap", link: "./word-wrap.html" },
+    { name: "writing-mode", link: "./writing-mode.html" },
+    { name: "z-index", link: "./z-index.html" },
+    { name: ":active", link: "./pseudo-active.html" },
+    { name: ":checked", link: "./pseudo-checked.html" },
+    { name: ":default", link: "./pseudo-default.html" },
+    { name: ":disabled", link: "./pseudo-disabled.html" },
+    { name: ":empty", link: "./pseudo-empty.html" },
+    { name: ":enabled", link: "./pseudo-enabled.html" },
+    { name: ":first-child", link: "./pseudo-first-child.html" },
+    { name: ":first-of-type", link: "./pseudo-first-of-type.html" },
+    { name: ":focus", link: "./pseudo-focus.html" },
+    { name: ":hover", link: "./pseudo-hover.html" },
+    { name: ":indeterminate", link: "./pseudo-indeterminate.html" },
+    { name: ":invalid", link: "./pseudo-invalid.html" },
+    { name: ":lang", link: "./pseudo-lang.html" },
+    { name: ":last-child", link: "./pseudo-last-child.html" },
+    { name: ":last-of-type", link: "./pseudo-last-of-type.html" },
+    { name: ":link", link: "./pseudo-link.html" },
+    { name: ":not", link: "./pseudo-not.html" },
+    { name: ":nth-child", link: "./pseudo-nth-child.html" },
+    { name: ":nth-last-child", link: "./pseudo-nth-last-child.html" },
+    { name: ":nth-last-of-type", link: "./pseudo-nth-last-of-type.html" },
+    { name: ":nth-of-type", link: "./pseudo-nth-of-type.html" },
+    { name: ":only-child", link: "./pseudo-only-child.html" },
+    { name: ":only-of-type", link: "./pseudo-only-of-type.html" },
+    { name: ":optional", link: "./pseudo-optional.html" },
+    { name: ":read-only", link: "./pseudo-read-only.html" },
+    { name: ":read-write", link: "./pseudo-read-write.html" },
+    { name: ":required", link: "./pseudo-required.html" },
+    { name: ":root", link: "./pseudo-root.html" },
+    { name: ":target", link: "./pseudo-target.html" },
+    { name: ":valid", link: "./pseudo-valid.html" },
+    { name: ":visited", link: "./pseudo-visited.html" },
+    { name: "::after", link: "./pseudo-after.html" },
+    { name: "::before", link: "./pseudo-before.html" },
+    { name: "::first-letter", link: "./pseudo-first-letter.html" },
+    { name: "::first-line", link: "./pseudo-first-line.html" },
+    { name: "::selection", link: "./pseudo-selection.html" },
+    { name: "attr()", link: "./func-attr.html" },
+    { name: "calc()", link: "./func-calc.html" },
+];
+
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+searchInput.addEventListener('input', function () {
+
+    const value = this.value.toLowerCase().trim();
+
+    searchResults.innerHTML = '';
+
+    if (value === '') {
+        searchResults.style.display = 'none';
+        return;
+    }
+
+    const filtered = properties.filter(property =>
+        property.name.toLowerCase().includes(value)
+    );
+
+    if (filtered.length === 0) {
+        searchResults.style.display = 'none';
+        return;
+    }
+
+    filtered.forEach(property => {
+
+        const link = document.createElement('a');
+
+        link.href = property.link;
+        link.classList.add('search-result-item');
+
+        link.textContent = property.name;
+
+        searchResults.appendChild(link);
+
+    });
+
+    searchResults.style.display = 'block';
+
+});
+
+document.addEventListener('click', function(e) {
+
+    if (!e.target.closest('.search-wrapper')) {
+        searchResults.style.display = 'none';
+    }
+
+});
+
+</script>
+</body>
+</html>

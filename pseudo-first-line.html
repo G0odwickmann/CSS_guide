@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>::first-line</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <a href="./index.html">
+            <img src="img/logo.svg" alt="LOGO" style="width:165px; height:auto;">
+        </a>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar-page"></aside>
+    <section class="content">
+
+        <div class="head-page">
+            <h2>::first-line</h2>
+            <a href="./main.html">
+                <button class="btn-back">&laquo; Назад</button>
+            </a>
+        </div>
+
+        <div class="desc-page">
+            <div>Псевдоэлемент <b>::first-line</b> применяет стили к первой строке текста в блочном элементе. Первая строка определяется визуально — в зависимости от ширины контейнера и переносов.</div>
+        </div>
+
+        <div class="syntax-page">
+            <h2>Синтаксис</h2>
+            <div class="syn-txt-page">
+                <i>селектор::first-line { свойство: значение; }</i>
+            </div>
+        </div>
+
+
+        <div class="example-page">
+            <h2>Пример:</h2>
+            <div class="code-example">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;::first-line&lt;/title&gt;
+    &lt;style&gt;
+        p::first-line {
+            font-weight: bold;
+            color: #41B3A3;
+            font-variant: small-caps;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Первая строка этого параграфа будет выделена особым стилем.
+    Остальные строки выглядят как обычно и не получают специального оформления.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>
